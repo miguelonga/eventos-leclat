@@ -1,0 +1,58 @@
+<div class="8u 12u$(medium) important(medium)">
+	<div id="content">
+
+		<!-- Content -->
+			<article>
+
+				<h2>Left Sidebar</h2>
+				<div class="row">
+					<% @products.each do |category| %>
+						<% category.each do |product|%>
+							<div class="6u 12u(medium)">
+
+								<section class="box feature">
+									<a href="#" class="image featured"><img src="images/fotoportada.jpg" alt="" /></a>
+									<div class="inner">
+										<header>
+											<h4><%= product["name"] %></h4>
+											<p><%= product["price"] %></p>
+										</header>
+									</div>
+								</section>
+
+							</div>
+						<% end %>
+					<% end %>
+					<!-- <div class="6u 12u(medium)">
+
+							<section class="box feature">
+								<a href="#" class="image featured"><img src="images/fotoportada.jpg" alt="" /></a>
+								<div class="inner">
+									<header>
+										<h4>¿Cómo trabajamos?</h4>
+										<p>Tenemos la ilusión de un niño y la experiencia de un iaio</p>
+									</header>
+								</div>
+							</section>
+
+					</div>
+					<div class="6u 12u(medium)">
+
+							<section class="box feature">
+								<a href="#" class="image featured"><img src="images/fotoportada.jpg" alt="" /></a>
+								<div class="inner">
+									<header>
+										<h4>¿Cómo trabajamos?</h4>
+										<p>Tenemos la ilusión de un niño y la experiencia de un iaio</p>
+									</header>
+								</div>
+							</section>
+
+					</div> -->
+				</div>
+
+
+			</article>
+
+	</div>
+</div>

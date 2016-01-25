@@ -1,0 +1,63 @@
+[{	"id":"1",
+	"name":"Mesas Dulces",
+	"products":[
+	{
+		"name":"Mesa simple",
+		"price":"50€"
+		},
+	{
+		"name":"Mesa complex",
+		"price":"100€"
+		},
+	{
+		"name":"Juguetes",
+		"price":"30€"
+		},
+	{
+		"name":"Resopon",
+		"price":"40€"
+		}
+	]
+},
+{	"id":"2",
+	"name":"Bicicletas",
+	"products":[
+	{
+		"name":"Negra",
+		"price":"20€"
+		},
+	{
+		"name":"Roja",
+		"price":"25€"
+		},
+	{
+		"name":"Triciclo",
+		"price":"150€"
+		},
+	{
+		"name":"Triciclo Heladero",
+		"price":"240€"
+		}
+	]
+},
+{	"id":"3",
+	"name":"Carteles",
+	"products":[
+	{
+		"name":"Love",
+		"price":"50€"
+		},
+	{
+		"name":"Love Luminoso",
+		"price":"150€"
+		},
+	{
+		"name":"Personalizado",
+		"price":"30€"
+		},
+	{
+		"name":"Letras XXL",
+		"price":"40€"
+		}
+	]
+}]
