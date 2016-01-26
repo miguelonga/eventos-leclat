@@ -1468,6 +1468,7 @@
 		width: 100%;
 		border-radius: 8px;
 		border: solid 1px #eee;
+		margin-bottom: 10px;
 	}
 
 		form input[type="text"]:focus,
@@ -1476,6 +1477,7 @@
 		form select:focus,
 		form textarea:focus {
 			border-color: #0090c5;
+			outline: none
 		}
 
 	form input[type="text"],
