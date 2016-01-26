@@ -3,19 +3,23 @@
 	"products":[
 	{
 		"name":"Mesa simple",
-		"price":"50€"
+		"price":"50€",
+		"images":["../../images/pic01.jpg","../../images/pic02.jpg"]
 		},
 	{
 		"name":"Mesa complex",
-		"price":"100€"
+		"price":"100€",
+		"images":["../../images/pic01.jpg","../../images/pic02.jpg"]
 		},
 	{
 		"name":"Juguetes",
-		"price":"30€"
+		"price":"30€",
+		"images":["../../images/pic01.jpg","../../images/pic02.jpg"]
 		},
 	{
 		"name":"Resopon",
-		"price":"40€"
+		"price":"40€",
+		"images":["../../images/pic01.jpg","../../images/pic02.jpg"]
 		}
 	]
 },
@@ -24,19 +28,23 @@
 	"products":[
 	{
 		"name":"Negra",
-		"price":"20€"
+		"price":"20€",
+		"images":["../../images/pic01.jpg","../../images/pic02.jpg"]
 		},
 	{
 		"name":"Roja",
-		"price":"25€"
+		"price":"25€",
+		"images":["../../images/pic01.jpg","../../images/pic02.jpg"]
 		},
 	{
 		"name":"Triciclo",
-		"price":"150€"
+		"price":"150€",
+		"images":["../../images/pic01.jpg","../../images/pic02.jpg"]
 		},
 	{
 		"name":"Triciclo Heladero",
-		"price":"240€"
+		"price":"240€",
+		"images":["../../images/pic01.jpg","../../images/pic02.jpg"]
 		}
 	]
 },
@@ -45,19 +53,23 @@
 	"products":[
 	{
 		"name":"Love",
-		"price":"50€"
+		"price":"50€",
+		"images":["../../images/pic01.jpg","../../images/pic02.jpg"]
 		},
 	{
 		"name":"Love Luminoso",
-		"price":"150€"
+		"price":"150€",
+		"images":["../../images/pic01.jpg","../../images/pic02.jpg"]
 		},
 	{
 		"name":"Personalizado",
-		"price":"30€"
+		"price":"30€",
+		"images":["../../images/pic01.jpg","../../images/pic02.jpg"]
 		},
 	{
 		"name":"Letras XXL",
-		"price":"40€"
+		"price":"40€",
+		"images":["../../images/pic01.jpg","../../images/pic02.jpg"]
 		}
 	]
 }]

@@ -11,6 +11,7 @@ get '/catalogo' do
   catalog = JSON.parse(data)
   @products = []
   catalog.each {|category| @products << category["products"]}
+  p @products.first[0]["images"]
   @categories = []
   catalog.each {|category| @categories << category }
   erb :catalog

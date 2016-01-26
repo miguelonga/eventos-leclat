@@ -2,7 +2,6 @@
 	<div id="content">
 
 		<!-- Content -->
-			<article>
 
 				<h2><%= @breadcrumb %></h2>
 				<div class="row">
@@ -11,7 +10,7 @@
 							<div class="4u 12u(medium)">
 
 								<section class="box feature">
-									<a href="#" class="image featured"><img src="../../images/fotoportada.jpg" alt="" /></a>
+									<a href="#" class="image featured"><img src="<%= product["images"].first %>" alt="" /></a>
 									<div class="inner">
 										<header>
 											<h4><%= product["name"] %></h4>
@@ -19,40 +18,10 @@
 										</header>
 									</div>
 								</section>
-
 							</div>
 						<% end %>
 					<% end %>
-					<!-- <div class="6u 12u(medium)">
-
-							<section class="box feature">
-								<a href="#" class="image featured"><img src="images/fotoportada.jpg" alt="" /></a>
-								<div class="inner">
-									<header>
-										<h4>¿Cómo trabajamos?</h4>
-										<p>Tenemos la ilusión de un niño y la experiencia de un iaio</p>
-									</header>
-								</div>
-							</section>
-
-					</div>
-					<div class="6u 12u(medium)">
-
-							<section class="box feature">
-								<a href="#" class="image featured"><img src="images/fotoportada.jpg" alt="" /></a>
-								<div class="inner">
-									<header>
-										<h4>¿Cómo trabajamos?</h4>
-										<p>Tenemos la ilusión de un niño y la experiencia de un iaio</p>
-									</header>
-								</div>
-							</section>
-
-					</div> -->
 				</div>
-
-
-			</article>
 
 	</div>
 </div>
