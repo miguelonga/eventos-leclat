@@ -1,5 +1,10 @@
 require 'sinatra'
 require 'json'
+require 'dotenv'
+require './helpers/mailer'
+# require './helpers/jsondb'
+include Mailer
+# include JsonDB
 
 
 get '/' do
@@ -11,7 +16,6 @@ get '/catalogo' do
   catalog = JSON.parse(data)
   @products = []
   catalog.each {|category| @products << category["products"]}
-  p @products.first[0]["images"]
   @categories = []
   catalog.each {|category| @categories << category }
   erb :catalog
@@ -31,6 +35,11 @@ end
 
 get '/contacto' do
   erb :contact
+end
+
+post '/send_mail' do
+  Mailer.send_mail(params[:name], params[:email], params[:subject], params[:message])
+  redirect '/'
 end
 
 
