@@ -2,36 +2,46 @@ require 'sinatra'
 require 'json'
 require 'dotenv'
 require './helpers/mailer'
-# require './helpers/jsondb'
+require './helpers/dson'
+
 include Mailer
-# include JsonDB
+
+include Dson
+
 
 
 get '/' do
-  erb :index
+  @products = Dson.products
+  erb :index 
 end
 
 get '/catalogo' do
-  data = File.read('data.json')
-  catalog = JSON.parse(data)
-  @products = []
-  catalog.each {|category| @products << category["products"]}
-  @categories = []
-  catalog.each {|category| @categories << category }
+  @products = Dson.products
+  @categories = Dson.categories
   erb :catalog
 end
 
 get '/catalogo/find/:find_by' do
-  data = File.read('data.json')
-  catalog = JSON.parse(data)
-  @products = []
-  category = catalog.select{|category| category["name"] == params[:find_by]}
-  @products << category[0]["products"]
-  @categories = []
-  catalog.each {|category| @categories << category }
+  @products = Dson.find_all_products(params[:find_by])
+  @categories = Dson.categories
   @breadcrumb = params[:find_by]
   erb :catalog
 end
+
+get '/catalogo/ver/:product' do
+  @product = Dson.find_product(params[:product])
+  @related_products = Dson.find_related_products(params[:products])
+  erb :product_detail
+end
+
+# get '/blog' do
+#   data = File.read('blog.json')
+#   blog = Json.parse(data)
+#   @posts = []
+#   blog.each {|post| @posts << post}
+#   puts @posts
+#   erb :blog
+# end
 
 get '/contacto' do
   erb :contact

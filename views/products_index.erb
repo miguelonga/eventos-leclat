@@ -1,0 +1,22 @@
+<div id="features-wrapper">
+<div class="container">
+	<h3>Productos</h3>
+	<div class="row">
+		<% @products.first(1).each do |category| %>
+			<% category.first(3).each do |product|%>
+				<div class="4u 12u(medium)">
+					<section class="box feature">
+						<a href="/catalogo/ver/<%= product["name"] %>" class="image featured"><img src="<%= product["images"].first %>" alt="" /></a>
+						<div class="inner">
+							<header>
+								<h4><%= product["name"] %></h4>
+								<p><%= product["price"] %></p>
+							</header>
+						</div>
+					</section>
+				</div>
+			<% end %>
+		<% end %>
+	</div>
+</div>
+</div>

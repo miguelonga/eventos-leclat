@@ -1,0 +1,30 @@
+<div id="page-wrapper">
+
+	<!-- Header -->
+		<%= erb :header %>
+
+	<!-- Main -->
+		<div id="main-wrapper">
+			<div class="container">
+				<div class="row 200%">
+					<div class="3u 12u$(medium)">
+						<%= erb :product_detail_sidebar %>
+					</div>
+					<div class="9u 12u$(medium) important(medium)">
+						<div id="content">
+							<div class="row">
+								<h4><%= @product[0]["name"] %></h4>
+								<p><%= @product[0]["price"] %></p>
+								<div class="row">
+									<% @product[0]["images"].each do |image| %>
+										<img src="<%= image %>" alt="">
+									<% end %>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</div>
