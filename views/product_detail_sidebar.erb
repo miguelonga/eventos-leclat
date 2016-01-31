@@ -6,7 +6,6 @@
 			<section>
 				<h3>Productos relacionados</h3>
 				<ul class="style2">
-					<li><a href="/catalogo">Todas</a></li>
 					<% @related_products.each do |product| %>
 						<li><a href="/catalogo/ver/<%= product['name'] %>"><%= product["name"] %></a></li>
 					<% end %>

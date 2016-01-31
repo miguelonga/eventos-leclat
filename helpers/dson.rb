@@ -16,7 +16,7 @@ module Dson
     products
   end
 
-  def find_all_products(category_name)
+  def find_product_by(category_name)
     products = []
     #seleccionar categoria
     category = @catalog.select{|category| category["name"] == category_name }
@@ -24,10 +24,10 @@ module Dson
     products << category[0]["products"]
   end
 
-	def find_product(product)
+	def find_product(product_name)
 	  @product = []
 	  @catalog.each do |category| 
-	    @product += category["products"].select{|p| p["name"] == product}
+	    @product += category["products"].select{|p| p["name"] == product_name}
 	  end
     @product
 	end
@@ -35,8 +35,16 @@ module Dson
 	def find_related_products(product)
 	  related_products = []
 	  @catalog.each do |category| 
-	    related_products += category["products"].select{|p| p["tags"].include?(@product[0]["tags"][0]) }
+	    related_products += category["products"].select{|p| p["tags"].include?(product[0]["tags"][0]) || p["tags"].include?(product[0]["tags"][1]) }
 	  end 
     related_products
 	end
 end
+
+
+
+
+
+
+
+

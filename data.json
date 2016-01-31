@@ -33,7 +33,7 @@
 	{
 		"name":"Negra",
 		"price":"20€",
-		"tags":[],
+		"tags":["prueba", "mesa"],
 		"images":["../../images/pic01.jpg","../../images/pic02.jpg"]
 		},
 	{
@@ -81,6 +81,35 @@
 		"name":"Letras XXL",
 		"price":"40€",
 		"tags":[],
+		"images":["../../images/pic01.jpg","../../images/pic02.jpg"]
+		}
+	]
+},
+{	"id":"4",
+	"name":"Cajas y Regalos",
+	"products":[
+	{
+		"name":"Caja decoradas",
+		"price":"10€",
+		"tags":["caja", "relagos"],
+		"images":["../../images/pic01.jpg","../../images/pic02.jpg"]
+		},
+	{
+		"name":"Cajas de madera",
+		"price":"15€",
+		"tags":["madera", "caja"],
+		"images":["../../images/pic01.jpg","../../images/pic02.jpg"]
+		},
+	{
+		"name":"Jabones",
+		"price":"3.5€",
+		"tags":["regalos", "set"],
+		"images":["../../images/pic01.jpg","../../images/pic02.jpg"]
+		},
+	{
+		"name":"Mermelada",
+		"price":"2€",
+		"tags":["dulce", ""],
 		"images":["../../images/pic01.jpg","../../images/pic02.jpg"]
 		}
 	]

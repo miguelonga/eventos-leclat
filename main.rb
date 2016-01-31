@@ -30,7 +30,7 @@ end
 
 get '/catalogo/ver/:product' do
   @product = Dson.find_product(params[:product])
-  @related_products = Dson.find_related_products(params[:products])
+  @related_products = Dson.find_related_products(@product)
   erb :product_detail
 end
 
