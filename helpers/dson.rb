@@ -1,8 +1,10 @@
 require 'json'
 
-module Dson
-	data = File.read('./data.json')
-	@catalog = JSON.parse(data)
+class Dson
+  def initialize(datafile)
+    data = File.read(datafile)
+    @catalog = JSON.parse(data)
+  end
 
   def categories
     categories = []
@@ -12,16 +14,16 @@ module Dson
 
   def products
     products = []
-    @catalog.each {|category| products << category["products"]}
+    categories.each do |category|
+      category["products"].each do |product|
+        products << product
+      end
+    end
     products
   end
 
   def find_products_by(category_name)
-    products = []
-    #seleccionar categoria
-    category = @catalog.select{|category| category["name"] == category_name }
-    #productos de la cat
-    products << category[0]["products"]
+    @catalog.select{|category| category["name"] == category_name }[0]["products"]
   end
 
 	def find_product(product_name)

@@ -5,10 +5,8 @@
 
 				<h2><%= @breadcrumb %></h2>
 				<div class="row">
-					<% @products.each do |category| %>
-						<% category.each do |product|%>
+					<% @products.each do |product| %>
 							<div class="4u 4u(medium) 12u(small)">
-
 								<section class="box feature">
 									<a href="/catalogo/ver/<%= product["name"] %>" class="image featured"><img src="<%= product["images"].first %>" alt="" /></a>
 									<div class="inner">
@@ -19,7 +17,6 @@
 									</div>
 								</section>
 							</div>
-						<% end %>
 					<% end %>
 				</div>
 

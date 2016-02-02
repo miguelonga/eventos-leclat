@@ -7,34 +7,33 @@ require './helpers/dson'
 
 include Mailer
 include Cloudimages
-include Dson
 
-
+dson = Dson.new("data.json")
 
 get '/' do
   Cloudimages.config
-  @products = Dson.find_products_by("Carteles")
+  @products = dson.find_products_by("Carteles")
   puts Cloudinary::Api.resources_by_tag("love")["resources"].first["url"]
   erb :index 
 end
 
 get '/catalogo' do
-  @products = Dson.products
-  @categories = Dson.categories
+  @products = dson.products
+  @categories = dson.categories
   erb :catalog
 end
 
 get '/catalogo/find/:find_by' do
-  @products = Dson.find_products_by(params[:find_by])
-  @categories = Dson.categories
+  @products = dson.find_products_by(params[:find_by])
+  @categories = dson.categories
   @breadcrumb = params[:find_by]
   erb :catalog
 end
 
 get '/catalogo/ver/:product' do
-  @product = Dson.find_product(params[:product])
-  @related_products = Dson.find_related_products(@product)
-  @categories = Dson.categories
+  @product = dson.find_product(params[:product])
+  @related_products = dson.find_related_products(@product)
+  @categories = dson.categories
   erb :product_detail
 end
 
