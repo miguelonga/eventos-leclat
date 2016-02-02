@@ -7,7 +7,7 @@
 				<div class="row">
 					<% @products.each do |category| %>
 						<% category.each do |product|%>
-							<div class="4u 12u(medium)">
+							<div class="4u 4u(medium) 12u(small)">
 
 								<section class="box feature">
 									<a href="/catalogo/ver/<%= product["name"] %>" class="image featured"><img src="<%= product["images"].first %>" alt="" /></a>

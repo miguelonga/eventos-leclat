@@ -1,26 +1,19 @@
 <div class="3u 12u$(medium)">
 	<div id="sidebar">
-
-		<!-- Sidebar -->
-			
-
-			<section>
+		<section>
 				<h3>Categorías</h3>
-				<ul class="style2">
+				<ul class="style2 category">
 					<li><a href="/catalogo">Todas</a></li>
 					<% @categories.each do |category| %>
 						<li><a href="/catalogo/find/<%= category['name'] %>"><%= category["name"] %></a></li>
 					<% end %>
 				</ul>
 			</section>
-
 			<section>
 				<h3>Garantía de originalidad</h3>
 				<p>Nuestros productos destacan por su singularidad. Nos centramos en conseguir aquello que nadie tiene pero que todos quieren.
 				<br> 
 				Siempre estamos <a href="#">buscando</a> nuevos productos o servicios con el fin de satisfacer a nuestros clientes</p>
-				
 			</section>
-
 	</div>
 </div>

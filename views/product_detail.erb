@@ -12,11 +12,8 @@
 					</div>
 					<div class="9u 12u$(medium) important(medium)">
 						<div id="content">
-							<div class="row">
-								<h4><%= @product[0]["name"] %></h4>
-								<p><%= @product[0]["price"] %></p>
-							</div>
 							<div class="detail_container">
+								<h3 style="text-align:center"><%= @product[0]["name"] %></h3>
 							  <div id="js-gallery" class="gallery">
 							    <div class="gallery__hero">
 							      <a href="" class="gallery__hero-enlarge ir" data-gallery="zoom">Zoom</a>
@@ -27,6 +24,12 @@
 							    		<a href="<%= image %>" data-gallery="thumb" class="is-active">
 											<img src="<%= image %>">
 										<% end %>
+							    </div>
+							    <div class="row">
+							    	<p>Precio por dia: <%= @product[0]["price"] %></p>
+							    </div>
+							    <div class="row">
+							    	<p><%= @product[0]["description"] %></p>
 							    </div>
 							  </div>
 						 </div>

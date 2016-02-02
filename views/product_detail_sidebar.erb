@@ -5,9 +5,19 @@
 
 			<section>
 				<h3>Productos relacionados</h3>
-				<ul class="style2">
+				<ul class="style2 category">
 					<% @related_products.each do |product| %>
-						<li><a href="/catalogo/ver/<%= product['name'] %>"><%= product["name"] %></a></li>
+						<li><a href="/catalogo/ver/<%= product['name'] %>"><img src="<%= product["images"].first %>"></a></li>
+					<% end %>
+				</ul>
+			</section>
+
+			<section>
+				<h3>Categorías</h3>
+				<ul class="style2 category">
+					<li><a href="/catalogo">Todas</a></li>
+					<% @categories.each do |category| %>
+						<li><a href="/catalogo/find/<%= category['name'] %>"><%= category["name"] %></a></li>
 					<% end %>
 				</ul>
 			</section>

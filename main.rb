@@ -11,7 +11,7 @@ include Dson
 
 
 get '/' do
-  @products = Dson.products
+  @products = Dson.find_products_by("Carteles")
   erb :index 
 end
 
@@ -22,7 +22,7 @@ get '/catalogo' do
 end
 
 get '/catalogo/find/:find_by' do
-  @products = Dson.find_all_products(params[:find_by])
+  @products = Dson.find_products_by(params[:find_by])
   @categories = Dson.categories
   @breadcrumb = params[:find_by]
   erb :catalog
@@ -31,6 +31,7 @@ end
 get '/catalogo/ver/:product' do
   @product = Dson.find_product(params[:product])
   @related_products = Dson.find_related_products(@product)
+  @categories = Dson.categories
   erb :product_detail
 end
 

@@ -1,116 +1,59 @@
-[{	"id":"1",
-	"name":"Mesas Dulces",
+[{	"name":"Mesas Dulces",
 	"products":[
 	{
 		"name":"Mesa simple",
 		"price":"50€",
 		"tags":["mesa","chuches"],
-		"images":["../../images/pic01.jpg","../../images/pic02.jpg"]
-		},
-	{
-		"name":"Mesa complex",
-		"price":"100€",
-		"tags":["bodorrio","mesa"],
-		"images":["../../images/pic01.jpg","../../images/pic02.jpg"]
-		},
-	{
-		"name":"Juguetes",
-		"price":"30€",
-		"tags":["mesa","comunion"],
-		"images":["../../images/pic01.jpg","../../images/pic02.jpg"]
-		},
-	{
-		"name":"Resopon",
-		"price":"40€",
-		"tags":["mesa"],
-		"images":["../../images/pic01.jpg","../../images/pic02.jpg"]
+		"images":["../../images/mesasimple.jpg","../../images/mesasimple2.jpg","../../images/mesasimple3.jpg"]
 		}
 	]
 },
-{	"id":"2",
-	"name":"Bicicletas",
+{	"name":"Bicicletas",
 	"products":[
 	{
 		"name":"Negra",
 		"price":"20€",
 		"tags":["prueba", "mesa"],
-		"images":["../../images/pic01.jpg","../../images/pic02.jpg"]
-		},
-	{
-		"name":"Roja",
-		"price":"25€",
-		"tags":[],
-		"images":["../../images/pic01.jpg","../../images/pic02.jpg"]
+		"images":["../../images/26.jpg","../../images/27.jpg","../../images/28.jpg"]
 		},
 	{
 		"name":"Triciclo",
 		"price":"150€",
 		"tags":[],
-		"images":["../../images/pic01.jpg","../../images/pic02.jpg"]
-		},
-	{
-		"name":"Triciclo Heladero",
-		"price":"240€",
-		"tags":[],
-		"images":["../../images/pic01.jpg","../../images/pic02.jpg"]
+		"images":["../../images/24.jpg","../../images/25.jpg"],
+		"description":"Loremipsumdolor lorem ipsum lorem ipsum su im su lorem oremipsumdolor lorem ipsum lorem ipsum su im su lorem oremipsumdolor lorem ipsum lorem ipsum su im su lorem oremipsumdolor lorem ipsum lorem ipsum su im su lorem oremipsumdolor lorem ipsum lorem ipsum su im su lorem"
 		}
 	]
 },
-{	"id":"3",
-	"name":"Carteles",
+{	"name":"Carteles",
 	"products":[
 	{
 		"name":"Love",
 		"price":"50€",
-		"tags":[],
-		"images":["../../images/pic01.jpg","../../images/pic02.jpg"]
+		"tags":["cartel"],
+		"images":["../../images/lovepeq.jpg"]
 		},
 	{
 		"name":"Love Luminoso",
 		"price":"150€",
-		"tags":[],
-		"images":["../../images/pic01.jpg","../../images/pic02.jpg"]
+		"tags":["cartel"],
+		"images":["../../images/love.jpg"]
 		},
 	{
 		"name":"Personalizado",
 		"price":"30€",
-		"tags":[],
-		"images":["../../images/pic01.jpg","../../images/pic02.jpg"]
-		},
-	{
-		"name":"Letras XXL",
-		"price":"40€",
-		"tags":[],
-		"images":["../../images/pic01.jpg","../../images/pic02.jpg"]
+		"tags":["cartel"],
+		"images":["../../images/9.jpg","../../images/10.jpg"]
 		}
 	]
 },
-{	"id":"4",
-	"name":"Cajas y Regalos",
+{	"name":"Cajas y Regalos",
 	"products":[
 	{
-		"name":"Caja decoradas",
+		"name":"Caja decorada",
 		"price":"10€",
 		"tags":["caja", "relagos"],
-		"images":["../../images/pic01.jpg","../../images/pic02.jpg"]
-		},
-	{
-		"name":"Cajas de madera",
-		"price":"15€",
-		"tags":["madera", "caja"],
-		"images":["../../images/pic01.jpg","../../images/pic02.jpg"]
-		},
-	{
-		"name":"Jabones",
-		"price":"3.5€",
-		"tags":["regalos", "set"],
-		"images":["../../images/pic01.jpg","../../images/pic02.jpg"]
-		},
-	{
-		"name":"Mermelada",
-		"price":"2€",
-		"tags":["dulce", ""],
-		"images":["../../images/pic01.jpg","../../images/pic02.jpg"]
+		"images":["../../images/7.jpg","../../images/8.jpg"]
 		}
 	]
 }]

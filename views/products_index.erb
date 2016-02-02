@@ -5,8 +5,8 @@
 		<% @products.first(1).each do |category| %>
 			<% category.first(3).each do |product|%>
 				<div class="4u 12u(medium)">
-					<section class="box feature">
-						<a href="/catalogo/ver/<%= product["name"] %>" class="image featured"><img src="<%= product["images"].first %>" alt="" /></a>
+					<section class="box index feature">
+						<a href="/catalogo/ver/<%= product["name"] %>" class="index_image featured"><img src="<%= product["images"].first %>" alt="" /></a>
 						<div class="inner">
 							<header>
 								<h4><%= product["name"] %></h4>
