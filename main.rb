@@ -11,9 +11,7 @@ include Cloudimages
 dson = Dson.new("data.json")
 
 get '/' do
-  Cloudimages.config
   @products = dson.find_products_by("Carteles")
-  puts Cloudinary::Api.resources_by_tag("love")["resources"].first["url"]
   erb :index 
 end
 
