@@ -4,7 +4,7 @@
 		"name":"Mesa simple",
 		"price":"50€",
 		"tags":["mesa","chuches"],
-		"images":["/images/mesasimple.jpg","/images/mesasimple2.jpg","/images/mesasimple3.jpg"]
+		"images":["../images/mesasimple.jpg","../images/mesasimple2.jpg","../images/mesasimple3.jpg"]
 		}
 	]
 },
@@ -14,13 +14,13 @@
 		"name":"Negra",
 		"price":"20€",
 		"tags":["prueba", "mesa"],
-		"images":["/images/26.jpg","/images/27.jpg","/images/28.jpg"]
+		"images":["../images/26.jpg","../images/27.jpg","../images/28.jpg"]
 		},
 	{
 		"name":"Triciclo",
 		"price":"150€",
 		"tags":[],
-		"images":["/images/24.jpg","/images/25.jpg"],
+		"images":["../images/24.jpg","../images/25.jpg"],
 		"description":"Loremipsumdolor lorem ipsum lorem ipsum su im su lorem oremipsumdolor lorem ipsum lorem ipsum su im su lorem oremipsumdolor lorem ipsum lorem ipsum su im su lorem oremipsumdolor lorem ipsum lorem ipsum su im su lorem oremipsumdolor lorem ipsum lorem ipsum su im su lorem"
 		}
 	]
@@ -31,19 +31,19 @@
 		"name":"Love",
 		"price":"50€",
 		"tags":["cartel"],
-		"images":["/images/lovepeq.jpg"]
+		"images":["../images/lovepeq.jpg"]
 		},
 	{
 		"name":"Love Luminoso",
 		"price":"150€",
 		"tags":["cartel"],
-		"images":["/images/love.jpg"]
+		"images":["../images/love.jpg"]
 		},
 	{
 		"name":"Personalizado",
 		"price":"30€",
 		"tags":["cartel"],
-		"images":["/images/9.jpg","/images/10.jpg"]
+		"images":["../images/9.jpg","../images/10.jpg"]
 		}
 	]
 },
@@ -53,7 +53,7 @@
 		"name":"Caja decorada",
 		"price":"10€",
 		"tags":["caja", "relagos"],
-		"images":["/images/7.jpg","/images/8.jpg"]
+		"images":["../images/7.jpg","../images/8.jpg"]
 		}
 	]
 }]
