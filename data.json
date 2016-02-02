@@ -4,7 +4,10 @@
 		"name":"Mesa simple",
 		"price":"50€",
 		"tags":["mesa","chuches"],
-		"images":["../images/mesasimple.jpg","../images/mesasimple2.jpg","../images/mesasimple3.jpg"]
+		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1454409832/mesasimple2_dsjbip.jpg",
+				"http://res.cloudinary.com/decorabodas/image/upload/v1454409827/mesasimple_cxw7d1.jpg",
+				"http://res.cloudinary.com/decorabodas/image/upload/v1454409822/mesasimple3_w8qetp.jpg"
+				]
 		}
 	]
 },
@@ -14,13 +17,16 @@
 		"name":"Negra",
 		"price":"20€",
 		"tags":["prueba", "mesa"],
-		"images":["../images/26.jpg","../images/27.jpg","../images/28.jpg"]
+		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1454409801/28_zy1xej.jpg"]
 		},
 	{
 		"name":"Triciclo",
 		"price":"150€",
 		"tags":[],
-		"images":["../images/24.jpg","../images/25.jpg"],
+		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1454409841/tricpans_rofgyy.jpg",
+				"http://res.cloudinary.com/decorabodas/image/upload/v1454409832/tric_el7qck.jpg",
+				"http://res.cloudinary.com/decorabodas/image/upload/v1454409796/25_p5wfug.jpg"
+				],
 		"description":"Loremipsumdolor lorem ipsum lorem ipsum su im su lorem oremipsumdolor lorem ipsum lorem ipsum su im su lorem oremipsumdolor lorem ipsum lorem ipsum su im su lorem oremipsumdolor lorem ipsum lorem ipsum su im su lorem oremipsumdolor lorem ipsum lorem ipsum su im su lorem"
 		}
 	]
@@ -31,19 +37,22 @@
 		"name":"Love",
 		"price":"50€",
 		"tags":["cartel"],
-		"images":["../images/lovepeq.jpg"]
+		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1454409835/negraho_bjovdo.jpg",
+				"http://res.cloudinary.com/decorabodas/image/upload/v1454409829/lovepeq_zfjwr2.jpg",
+				"http://res.cloudinary.com/decorabodas/image/upload/v1454409823/negravertical_gat3sc.jpg"
+				]
 		},
 	{
 		"name":"Love Luminoso",
 		"price":"150€",
 		"tags":["cartel"],
-		"images":["../images/love.jpg"]
+		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1454408914/love_dxq84k.jpg"]
 		},
 	{
 		"name":"Personalizado",
 		"price":"30€",
 		"tags":["cartel"],
-		"images":["../images/9.jpg","../images/10.jpg"]
+		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1454409779/10_wfecrh.jpg"]
 		}
 	]
 },
@@ -53,7 +62,9 @@
 		"name":"Caja decorada",
 		"price":"10€",
 		"tags":["caja", "relagos"],
-		"images":["../images/7.jpg","../images/8.jpg"]
+		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1454409783/8_ih2pbe.jpg",
+				"http://res.cloudinary.com/decorabodas/image/upload/v1454409764/7_hv54hl.jpg"
+				]
 		}
 	]
 }]

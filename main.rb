@@ -2,16 +2,19 @@ require 'sinatra'
 require 'json'
 require 'dotenv'
 require './helpers/mailer'
+require './helpers/cloudinary'
 require './helpers/dson'
 
 include Mailer
-
+include Cloudimages
 include Dson
 
 
 
 get '/' do
+  Cloudimages.config
   @products = Dson.find_products_by("Carteles")
+  puts Cloudinary::Api.resources_by_tag("love")["resources"].first["url"]
   erb :index 
 end
 
