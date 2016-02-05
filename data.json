@@ -40,7 +40,7 @@
 		"tags":["cartel"],
 		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1454409835/negraho_bjovdo.jpg",
 				"http://res.cloudinary.com/decorabodas/image/upload/v1454409829/lovepeq_zfjwr2.jpg",
-				"http://res.cloudinary.com/decorabodas/image/upload/v1454409823/negravertical_gat3sc.jpg"
+				"http://res.cloudinary.com/decorabodas/image/upload/a_auto_left/v1454409823/negravertical_gat3sc.jpg"
 				]
 		},
 	{
@@ -53,7 +53,9 @@
 		"name":"Personalizado",
 		"price":"30€",
 		"tags":["cartel"],
-		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1454409779/10_wfecrh.jpg"]
+		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1454409779/10_wfecrh.jpg",
+				"http://res.cloudinary.com/decorabodas/image/upload/v1454700557/IMG_6159_icazst.jpg"
+				]
 		}
 	]
 },
@@ -68,4 +70,51 @@
 				]
 		}
 	]
-}]
+},
+{	"name":"Numeros para mesas",
+	"products":[
+	{
+		"name":"Numero chinchetas",
+		"price":"10€",
+		"tags":["numeros", "madera"],
+		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1454701015/numeros/IMG_6124.jpg",
+				"http://res.cloudinary.com/decorabodas/image/upload/v1454701082/numeros/IMG_6102.jpg",
+				"http://res.cloudinary.com/decorabodas/image/upload/v1454700585/IMG_6126_vbpd2o.jpg"
+				]
+	},
+	{
+		"name":"Numero marco",
+		"price":"10€",
+		"tags":["numeros", "madera"],
+		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1454701388/IMG_6072_ccs4on.jpg"
+				]
+	},
+	{
+		"name":"Numero estampado",
+		"price":"10€",
+		"tags":["numeros", "madera"],
+		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1454701088/numeros/IMG_6117.jpg",
+				"http://res.cloudinary.com/decorabodas/image/upload/v1454701331/IMG_6114_c8naec.jpg"
+				]
+	}
+	]
+},
+{	"name":"Novios para tartas",
+	"products":[
+		{
+		"name":"Brochetas de novios",
+		"price":"10€",
+		"tags":["novios", "tarta"],
+		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1454700835/numeros/IMG_6153.jpg"]
+		},
+		{
+		"name":"Pinzas unidas",
+		"price":"10€",
+		"tags":["novios", "tarta"],
+		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1454700994/numeros/IMG_6146.jpg",
+				"http://res.cloudinary.com/decorabodas/image/upload/v1454701090/numeros/IMG_6148.jpg"
+				]
+		}
+	]
+}
+]
