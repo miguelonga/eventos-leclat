@@ -3,7 +3,7 @@
 	"products":[
 	{
 		"name":"Mesa simple",
-		"price":"50€",
+		"price":"Consultar",
 		"tags":["mesa","chuches"],
 		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1454409832/mesasimple2_dsjbip.jpg",
 				"http://res.cloudinary.com/decorabodas/image/upload/v1454409827/mesasimple_cxw7d1.jpg",
@@ -16,19 +16,18 @@
 	"products":[
 	{
 		"name":"Negra",
-		"price":"20€",
-		"tags":["prueba", "mesa"],
+		"price":"50€",
+		"tags":["bicicleta", "stand"],
 		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1454409801/28_zy1xej.jpg"]
 		},
 	{
 		"name":"Triciclo",
 		"price":"150€",
-		"tags":[],
+		"tags":["bicicleta"],
 		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1454409841/tricpans_rofgyy.jpg",
 				"http://res.cloudinary.com/decorabodas/image/upload/v1454409832/tric_el7qck.jpg",
 				"http://res.cloudinary.com/decorabodas/image/upload/v1454409796/25_p5wfug.jpg"
-				],
-		"description":"Loremipsumdolor lorem ipsum lorem ipsum su im su lorem oremipsumdolor lorem ipsum lorem ipsum su im su lorem oremipsumdolor lorem ipsum lorem ipsum su im su lorem oremipsumdolor lorem ipsum lorem ipsum su im su lorem oremipsumdolor lorem ipsum lorem ipsum su im su lorem"
+				]
 		}
 	]
 },
@@ -45,13 +44,13 @@
 		},
 	{
 		"name":"Love Luminoso",
-		"price":"150€",
+		"price":"50€ por letra",
 		"tags":["cartel"],
 		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1454408914/love_dxq84k.jpg"]
 		},
 	{
 		"name":"Personalizado",
-		"price":"30€",
+		"price":"50€",
 		"tags":["cartel"],
 		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1454409779/10_wfecrh.jpg",
 				"http://res.cloudinary.com/decorabodas/image/upload/v1454700557/IMG_6159_icazst.jpg"
@@ -63,7 +62,7 @@
 	"products":[
 	{
 		"name":"Caja decorada",
-		"price":"10€",
+		"price":"15€",
 		"tags":["caja", "relagos"],
 		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1454409783/8_ih2pbe.jpg",
 				"http://res.cloudinary.com/decorabodas/image/upload/v1454409764/7_hv54hl.jpg"
@@ -75,7 +74,7 @@
 	"products":[
 	{
 		"name":"Numero chinchetas",
-		"price":"10€",
+		"price":"15/20€",
 		"tags":["numeros", "madera"],
 		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1454701015/numeros/IMG_6124.jpg",
 				"http://res.cloudinary.com/decorabodas/image/upload/v1454701082/numeros/IMG_6102.jpg",
@@ -84,7 +83,7 @@
 	},
 	{
 		"name":"Numero marco",
-		"price":"10€",
+		"price":"15/20€",
 		"tags":["numeros", "madera"],
 		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1454701388/IMG_6072_ccs4on.jpg"
 				]
@@ -109,7 +108,7 @@
 		},
 		{
 		"name":"Pinzas unidas",
-		"price":"10€",
+		"price":"25€",
 		"tags":["novios", "tarta"],
 		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1454700994/numeros/IMG_6146.jpg",
 				"http://res.cloudinary.com/decorabodas/image/upload/v1454701090/numeros/IMG_6148.jpg"

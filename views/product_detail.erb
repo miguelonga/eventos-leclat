@@ -22,7 +22,8 @@
 							    	<% @product[0]["images"].each do |image| %>
 							    		<a href="<%= image %>" data-gallery="thumb" class="is-active">
 											<img src="<%= image %>">
-										<% end %>
+										</a>
+									<% end %>
 							    </div>
 							    <div class="row">
 							    	<p>Precio por dia: <%= @product[0]["price"] %></p>
