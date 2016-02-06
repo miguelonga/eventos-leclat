@@ -17,11 +17,7 @@ img {
 /**
  * Container Styles
  */
-.detail_container {
-  max-width: 45em;
-  margin: 0 auto;
-  padding: 1em;
-}
+
 
 /**
  * Helper Styles
@@ -43,7 +39,7 @@ img {
 .gallery__hero {
   overflow: hidden;
   position: relative;
-  padding: 2em;
+
   margin: 0 0 0.33333em;
   background: #fff;
 }
@@ -95,4 +91,9 @@ img {
 }
 .gallery__thumbs a.is-active {
   opacity: 0.2;
+}
+.related_product{
+  position:relative;
+  float:left;
+  margin-left:10px
 }

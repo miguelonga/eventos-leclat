@@ -1,4 +1,4 @@
-<div class="9u 12u$(medium) important(medium)">
+<div class="9u 12u(medium) 12u(small) important(medium)">
 	<div id="content">
 
 		<!-- Content -->
@@ -6,7 +6,7 @@
 				<h2><%= @breadcrumb %></h2>
 				<div class="row">
 					<% @products.each do |product| %>
-							<div class="4u 4u(medium) 12u(small)">
+							<div class="6u 6u(medium) 12u(small)">
 								<section class="box feature">
 									<a href="/catalogo/ver/<%= product["name"] %>" class="image featured"><img src="<%= product["images"].first %>" alt="" /></a>
 									<div class="inner">

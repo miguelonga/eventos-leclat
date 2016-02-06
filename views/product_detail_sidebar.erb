@@ -7,7 +7,7 @@
 				<h3>Productos relacionados</h3>
 				<ul class="style2 category">
 					<% @related_products.each do |product| %>
-						<li><a href="/catalogo/ver/<%= product['name'] %>"><img src="<%= product["images"].first %>"></a></li>
+						<li class="related_product"><a href="/catalogo/ver/<%= product['name'] %>"><img src="<%= product["images"].first %>"></a></li>
 					<% end %>
 				</ul>
 			</section>
@@ -26,7 +26,7 @@
 				<h3>Garantía de originalidad</h3>
 				<p>Nuestros productos destacan por su singularidad. Nos centramos en conseguir aquello que nadie tiene pero que todos quieren.
 				<br> 
-				Siempre estamos <a href="#">buscando</a> nuevos productos o servicios con el fin de satisfacer a nuestros clientes</p>
+				Siempre estamos <a href="/contacto">buscando</a> nuevos productos o servicios con el fin de satisfacer a nuestros clientes</p>
 				
 			</section>
 
