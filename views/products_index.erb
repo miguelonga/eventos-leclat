@@ -1,6 +1,5 @@
 <div id="features-wrapper">
 <div class="container">
-	<h3>Productos</h3>
 	<div class="row">
 		<% @products.first(3).each do |product| %>
 				<div class="4u 12u(medium)">
@@ -9,7 +8,6 @@
 						<div class="inner">
 							<header>
 								<h4><%= product["name"] %></h4>
-								<p><%= product["price"] %></p>
 							</header>
 						</div>
 					</section>
