@@ -14,3 +14,30 @@
 		</div>
 	</div>
 </div>
+
+<br>
+
+<div id="banner-wrapper">
+	<div id="banner" class="box container">
+		<div class="row">
+			<div class="1u"></div>
+			<div class="10u">
+				<div class="box-video">
+				  <div class="bg-video" style="background-image: url(https://ununsplash.imgix.net/photo-1418225043143-90858d2301b4?fit=crop&fm=jpg&q=75&w=1000);">
+				    <div class="bt-play">Play</div>
+				  </div>
+				  <div class="video-container">
+				    <iframe width="590" height="332" src="//player.vimeo.com/video/151762219?api=1&amp;portrait=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	$(".box-video").click(function(){
+	  $('iframe',this)[0].src += "&amp;autoplay=1";
+	  $(this).addClass('open');
+	});
+</script>
