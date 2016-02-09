@@ -2,14 +2,6 @@
 {	"name":"Mesas Dulces",
 	"products":[
 	{
-		"name":"Mesa",
-		"price":"Consultar",
-		"tags":["mesa","chuches"],
-		"images":["http://res.cloudinary.com/decorabodas/image/upload/c_scale,w_491/v1454409832/mesasimple2_dsjbip.jpg",
-				"http://res.cloudinary.com/decorabodas/image/upload/c_scale,w_491/v1454409827/mesasimple_cxw7d1.jpg"
-				]
-		},
-	{
 		"name":"Flores dulces",
 		"price":"Consultar",
 		"tags":["mesa","chuches"],
@@ -18,18 +10,18 @@
 				]
 		},
 	{
+		"name":"Mesa rosa",
+		"price":"Consultar",
+		"tags":["mesa","chuches"],
+		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1454957241/lowsize/dulcerosa.jpg"
+				]
+		},
+	{
 		"name":"Mesa simple",
 		"price":"Consultar",
 		"tags":["mesa","chuches"],
 		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1454929021/lowsize/dulceflor3.jpg",
 				"http://res.cloudinary.com/decorabodas/image/upload/v1454929021/lowsize/dulceflor4.jpg"
-				]
-		},
-	{
-		"name":"Mesa rosa",
-		"price":"Consultar",
-		"tags":["mesa","chuches"],
-		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1454957241/lowsize/dulcerosa.jpg"
 				]
 		},
 	{
