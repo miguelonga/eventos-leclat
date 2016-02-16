@@ -8,11 +8,11 @@ require './helpers/dson'
 include Mailer
 include Cloudimages
 
-dson = Dson.new("data.json")
+dson = Catalog.new(ProductFile.new("data.json"))
 
 get '/' do
   @products = dson.find_products_by("Carteles")
-  erb :index 
+  erb :index
 end
 
 get '/catalogo' do
