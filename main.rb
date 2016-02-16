@@ -3,35 +3,35 @@ require 'json'
 require 'dotenv'
 require './helpers/mailer'
 require './helpers/cloudinary'
-require './helpers/dson'
+require './helpers/catalog'
 
 include Mailer
 include Cloudimages
 
-dson = Catalog.new(ProductFile.new("data.json"))
+catalog = Catalog.new(ProductFile.new("data.json"))
 
 get '/' do
-  @products = dson.find_products_by("Carteles")
+  @products = catalog.find_products_by("Carteles")
   erb :index
 end
 
 get '/catalogo' do
-  @products = dson.products
-  @categories = dson.categories
+  @products = catalog.products
+  @categories = catalog.categories
   erb :catalog
 end
 
 get '/catalogo/find/:find_by' do
-  @products = dson.find_products_by(params[:find_by])
-  @categories = dson.categories
+  @products = catalog.find_products_by(params[:find_by])
+  @categories = catalog.categories
   @breadcrumb = params[:find_by]
   erb :catalog
 end
 
 get '/catalogo/ver/:product' do
-  @product = dson.find_product(params[:product])
-  @related_products = dson.find_related_products(@product)
-  @categories = dson.categories
+  @product = catalog.find_product(params[:product])
+  @related_products = catalog.find_related_products(@product)
+  @categories = catalog.categories
   erb :product_detail
 end
 
