@@ -1,16 +1,16 @@
 require 'json'
 
 class ProductFile
-  attr_reader :catalog
+  attr_reader :data
   def initialize(datafile)
-    data = File.read(datafile)
-    @catalog = JSON.parse(data)
+    file = File.read(datafile)
+    @data = JSON.parse(file)
   end
 end
 
 class Catalog
   def initialize(catalog_source)
-    @catalog = catalog_source.catalog
+    @catalog = catalog_source.data
   end
 
   def categories
