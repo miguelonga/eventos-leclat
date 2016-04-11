@@ -2,6 +2,23 @@
 {	"name":"Mesas Dulces",
 	"products":[
 	{
+		"name":"Mesa de Futbol",
+		"price":"Consultar",
+		"tags":["mesa","chuches"],
+		"images":["http://res.cloudinary.com/decorabodas/image/upload/a_auto_left/v1460377230/lowsize/IMG_1344.jpg",
+				"http://res.cloudinary.com/decorabodas/image/upload/a_auto_left/v1460377235/lowsize/IMG_1343.jpg"
+				]
+		},
+	{
+		"name":"Coches de carrera",
+		"price":"Consultar",
+		"tags":["mesa","chuches"],
+		"images":["http://res.cloudinary.com/decorabodas/image/upload/a_auto_left/v1460377240/lowsize/IMG_1346.jpg",
+				"http://res.cloudinary.com/decorabodas/image/upload/a_auto_left/v1460377234/lowsize/IMG_1348.jpg",
+				"http://res.cloudinary.com/decorabodas/image/upload/a_auto_left/v1460377231/lowsize/IMG_1349.jpg"
+				]
+		},
+	{
 		"name":"Flores dulces",
 		"price":"Consultar",
 		"tags":["mesa","chuches"],
