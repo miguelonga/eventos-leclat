@@ -10,8 +10,13 @@ include Cloudimages
 
 catalog = Catalog.new(ProductFile.new("data.json"))
 
+require 'pinterest-api'
+
+
+
 get '/' do
   @products = catalog.find_products_by("Carteles")
+  @client = Pinterest::Client.new("AWMvbIATBpbIIrgl9AVhcN4wYNZ2FEZ_tlm0v3xDBtadgmBHwwAAAAA")
   erb :index
 end
 
