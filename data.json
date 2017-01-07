@@ -1,208 +1,181 @@
 [
-{	"name":"Mesas Dulces",
-	"products":[
-	{
-		"name":"Mesa de Futbol",
-		"price":"Consultar",
-		"tags":["mesa","chuches"],
-		"images":["http://res.cloudinary.com/decorabodas/image/upload/a_auto_left/v1460377230/lowsize/IMG_1344.jpg",
-				"http://res.cloudinary.com/decorabodas/image/upload/a_auto_left/v1460377235/lowsize/IMG_1343.jpg"
-				]
-		},
-	{
-		"name":"Coches de carrera",
-		"price":"Consultar",
-		"tags":["mesa","chuches"],
-		"images":["http://res.cloudinary.com/decorabodas/image/upload/a_auto_left/v1460377240/lowsize/IMG_1346.jpg",
-				"http://res.cloudinary.com/decorabodas/image/upload/a_auto_left/v1460377234/lowsize/IMG_1348.jpg",
-				"http://res.cloudinary.com/decorabodas/image/upload/a_auto_left/v1460377231/lowsize/IMG_1349.jpg"
-				]
-		},
-	{
-		"name":"Flores dulces",
-		"price":"Consultar",
-		"tags":["mesa","chuches"],
-		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1454929021/lowsize/dulceflor.jpg",
-				"http://res.cloudinary.com/decorabodas/image/upload/v1454929021/lowsize/dulceflor2.jpg"
-				]
-		},
-	{
-		"name":"Mesa rosa",
-		"price":"Consultar",
-		"tags":["mesa","chuches"],
-		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1454957241/lowsize/dulcerosa.jpg"
-				]
-		},
-	{
-		"name":"Mesa simple",
-		"price":"Consultar",
-		"tags":["mesa","chuches"],
-		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1454929021/lowsize/dulceflor3.jpg",
-				"http://res.cloudinary.com/decorabodas/image/upload/v1454929021/lowsize/dulceflor4.jpg"
-				]
-		},
-	{
-		"name":"Carro Dulce",
-		"price":"Consultar",
-		"tags":["mesa","chuches"],
-		"images":["http://res.cloudinary.com/decorabodas/image/upload/c_scale,h_587/v1454958821/lowsize/carrodulce.jpg"]
-		}
-	]
+{ "name":"Mesas Dulces",
+  "products":[
+  {
+    "name":"Flores dulces",
+    "price":"Consultar",
+    "tags":["mesa","chuches"],
+    "images":["http://res.cloudinary.com/decorabodas/image/upload/v1454929021/lowsize/dulceflor.jpg",
+        "http://res.cloudinary.com/decorabodas/image/upload/v1454929021/lowsize/dulceflor2.jpg"
+        ]
+    },
+  {
+    "name":"Mesa rosa",
+    "price":"Consultar",
+    "tags":["mesa","chuches"],
+    "images":["http://res.cloudinary.com/decorabodas/image/upload/v1454957241/lowsize/dulcerosa.jpg"
+        ]
+    },
+  {
+    "name":"Mesa simple",
+    "price":"Consultar",
+    "tags":["mesa","chuches"],
+    "images":["http://res.cloudinary.com/decorabodas/image/upload/v1454929021/lowsize/dulceflor3.jpg",
+        "http://res.cloudinary.com/decorabodas/image/upload/v1454929021/lowsize/dulceflor4.jpg"
+        ]
+    },
+  {
+    "name":"Carro Dulce",
+    "price":"Consultar",
+    "tags":["mesa","chuches"],
+    "images":["http://res.cloudinary.com/decorabodas/image/upload/c_scale,h_587/v1454958821/lowsize/carrodulce.jpg"]
+    }
+  ]
 },
-{	"name":"Bicicletas",
-	"products":[
-	{
-		"name":"Negra",
-		"price":"50€",
-		"tags":["bicicleta", "stand"],
-		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1454874440/lowsize/320.jpg",
-				"http://res.cloudinary.com/decorabodas/image/upload/v1454874430/lowsize/370.jpg"
-				]
-		},
-	{
-		"name":"Triciclo",
-		"price":"150€",
-		"tags":["bicicleta"],
-		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1470217790/marblau/IMG_8801.jpg",
-				"http://res.cloudinary.com/decorabodas/image/upload/v1454874439/lowsize/390.jpg",
-				"http://res.cloudinary.com/decorabodas/image/upload/v1454874439/lowsize/310.jpg"
-				]
-		}
-	]
+{ "name":"Bicicletas",
+  "products":[
+  {
+    "name":"Negra",
+    "price":"50€",
+    "tags":["bicicleta", "stand"],
+    "images":["http://res.cloudinary.com/decorabodas/image/upload/v1454874440/lowsize/320.jpg",
+        "http://res.cloudinary.com/decorabodas/image/upload/v1454874430/lowsize/370.jpg"
+        ]
+    },
+  {
+    "name":"Tandem",
+    "price":"150€",
+    "tags":["bicicleta", "stand"],
+    "images":["http://res.cloudinary.com/la-colmena-que-dice-si/image/upload/v1483816300/decorabodas/IMG_9670.jpg",
+        "http://res.cloudinary.com/la-colmena-que-dice-si/image/upload/v1483816279/decorabodas/IMG_9664.jpg"
+        ]
+    },
+  {
+    "name":"Triciclo",
+    "price":"150€",
+    "tags":["bicicleta"],
+    "images":["http://res.cloudinary.com/decorabodas/image/upload/v1454874439/lowsize/390.jpg",
+        "http://res.cloudinary.com/decorabodas/image/upload/v1454874439/lowsize/310.jpg"
+        ]
+    }
+  ]
 },
-{	"name":"Carteles",
-	"products":[
-	{
-		"name":"Love",
-		"price":"50€",
-		"tags":["cartel"],
-		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1454874430/lowsize/370.jpg",
-				"http://res.cloudinary.com/decorabodas/image/upload/v1454874438/lowsize/360.jpg",
-				"http://res.cloudinary.com/decorabodas/image/upload/v1454874438/lowsize/301.jpg"
-				]
-		},
-	{
-		"name":"Love Luminoso",
-		"price":"50€ por letra",
-		"tags":["cartel"],
-		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1454874439/lowsize/350.jpg"]
-		},
-	{
-		"name":"Love Vertical",
-		"price":"50€ por letra",
-		"tags":["cartel"],
-		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1456081280/lowsize/05.jpg",
-						"http://res.cloudinary.com/decorabodas/image/upload/v1456081278/lowsize/04.jpg"
-						]
-		},
-	{
-		"name":"Love Madera",
-		"price":"50€ por letra",
-		"tags":["cartel"],
-		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1470217709/marblau/IMG_8754.jpg",
-						"http://res.cloudinary.com/decorabodas/image/upload/v1470217780/marblau/IMG_8784.jpg",
-						"http://res.cloudinary.com/decorabodas/image/upload/v1470217785/marblau/IMG_8776.jpg",
-						"http://res.cloudinary.com/decorabodas/image/upload/v1470217792/marblau/IMG_8837.jpg"
-						]
-		},
-	{
-		"name":"Personalizado",
-		"price":"50€",
-		"tags":["cartel"],
-		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1454874439/lowsize/30.jpg",
-				"http://res.cloudinary.com/decorabodas/image/upload/v1454874439/lowsize/45.jpg"
-				]
-	}
-	]
+{ "name":"Carteles",
+  "products":[
+  {
+    "name":"Love",
+    "price":"50€",
+    "tags":["cartel"],
+    "images":["http://res.cloudinary.com/decorabodas/image/upload/v1454874430/lowsize/370.jpg",
+        "http://res.cloudinary.com/decorabodas/image/upload/v1454874438/lowsize/360.jpg",
+        "http://res.cloudinary.com/decorabodas/image/upload/v1454874438/lowsize/301.jpg"
+        ]
+    },
+  {
+    "name":"Love Luminoso",
+    "price":"50€ por letra",
+    "tags":["cartel"],
+    "images":["http://res.cloudinary.com/decorabodas/image/upload/v1454874439/lowsize/350.jpg"]
+    },
+  {
+    "name":"Personalizado",
+    "price":"50€",
+    "tags":["cartel"],
+    "images":["http://res.cloudinary.com/decorabodas/image/upload/v1454874439/lowsize/30.jpg",
+        "http://res.cloudinary.com/decorabodas/image/upload/v1454874439/lowsize/45.jpg"
+        ]
+  }
+  ]
 },
-{	"name":"Cajas y Regalos",
-	"products":[
-	{
-		"name":"Caja decorada",
-		"price":"15€",
-		"tags":["caja", "relagos"],
-		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1454874439/lowsize/340.jpg",
-				"http://res.cloudinary.com/decorabodas/image/upload/v1454874439/lowsize/330.jpg"
-				]
-		}
-	]
+{ "name":"Cajas y Regalos",
+  "products":[
+  {
+    "name":"Caja decorada",
+    "price":"15€",
+    "tags":["caja", "relagos"],
+    "images":["http://res.cloudinary.com/decorabodas/image/upload/v1454874439/lowsize/340.jpg",
+        "http://res.cloudinary.com/decorabodas/image/upload/v1454874439/lowsize/330.jpg"
+        ]
+    }
+  ]
 },
-{	"name":"Numeros para mesas",
-	"products":[
-	{
-		"name":"Numero chinchetas",
-		"price":"15/20€",
-		"tags":["numeros", "madera"],
-		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1454873250/lowsize/35.jpg",
-				"http://res.cloudinary.com/decorabodas/image/upload/v1454873249/lowsize/36.jpg",
-				"http://res.cloudinary.com/decorabodas/image/upload/v1454873237/lowsize/34.jpg",
-				"http://res.cloudinary.com/decorabodas/image/upload/v1454873244/lowsize/33.jpg"
-				]
-	},
-	{
-		"name":"Numero marco",
-		"price":"15/20€",
-		"tags":["numeros", "madera"],
-		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1454873243/lowsize/37.jpg"
-				]
-	},
-	{
-		"name":"Numero estampado",
-		"price":"10€",
-		"tags":["numeros", "madera"],
-		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1454873248/lowsize/32.jpg",
-				"http://res.cloudinary.com/decorabodas/image/upload/v1454873237/lowsize/31.jpg"
-				]
-	}
-	]
+{ "name":"Numeros para mesas",
+  "products":[
+  {
+    "name":"Numero chinchetas",
+    "price":"15/20€",
+    "tags":["numeros", "madera"],
+    "images":["http://res.cloudinary.com/decorabodas/image/upload/v1454873250/lowsize/35.jpg",
+        "http://res.cloudinary.com/decorabodas/image/upload/v1454873249/lowsize/36.jpg",
+        "http://res.cloudinary.com/decorabodas/image/upload/v1454873237/lowsize/34.jpg",
+        "http://res.cloudinary.com/decorabodas/image/upload/v1454873244/lowsize/33.jpg"
+        ]
+  },
+  {
+    "name":"Numero marco",
+    "price":"15/20€",
+    "tags":["numeros", "madera"],
+    "images":["http://res.cloudinary.com/decorabodas/image/upload/v1454873243/lowsize/37.jpg"
+        ]
+  },
+  {
+    "name":"Numero estampado",
+    "price":"10€",
+    "tags":["numeros", "madera"],
+    "images":["http://res.cloudinary.com/decorabodas/image/upload/v1454873248/lowsize/32.jpg",
+        "http://res.cloudinary.com/decorabodas/image/upload/v1454873237/lowsize/31.jpg"
+        ]
+  }
+  ]
 },
-{	"name":"Novios para tartas",
-	"products":[
-		{
-		"name":"Brochetas de novios",
-		"price":"10€",
-		"tags":["novios", "tarta"],
-		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1454873255/lowsize/44.jpg",
-				"http://res.cloudinary.com/decorabodas/image/upload/v1454873260/lowsize/43.jpg"]
-		},
-		{
-		"name":"Pinzas unidas",
-		"price":"25€",
-		"tags":["novios", "tarta"],
-		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1454873254/lowsize/40.jpg",
-				"http://res.cloudinary.com/decorabodas/image/upload/v1454873248/lowsize/39.jpg",
-				"http://res.cloudinary.com/decorabodas/image/upload/v1454873244/lowsize/38.jpg"
-				]
-		}
-	]
+{ "name":"Novios para tartas",
+  "products":[
+    {
+    "name":"Brochetas de novios",
+    "price":"10€",
+    "tags":["novios", "tarta"],
+    "images":["http://res.cloudinary.com/decorabodas/image/upload/v1454873255/lowsize/44.jpg",
+        "http://res.cloudinary.com/decorabodas/image/upload/v1454873260/lowsize/43.jpg",
+        "http://res.cloudinary.com/la-colmena-que-dice-si/image/upload/v1483815953/decorabodas/IMG_9730.jpg"]
+    },
+    {
+    "name":"Pinzas unidas",
+    "price":"25€",
+    "tags":["novios", "tarta"],
+    "images":["http://res.cloudinary.com/decorabodas/image/upload/v1454873254/lowsize/40.jpg",
+        "http://res.cloudinary.com/decorabodas/image/upload/v1454873248/lowsize/39.jpg",
+        "http://res.cloudinary.com/decorabodas/image/upload/v1454873244/lowsize/38.jpg"
+        ]
+    }
+  ]
 },
-{	"name":"Elementos decorativos",
-	"products":[
-		{
-		"name":"Árbol",
-		"price":"100€",
-		"tags":["decorativo", "madera"],
-		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1456081277/lowsize/03.jpg",
-				"http://res.cloudinary.com/decorabodas/image/upload/v1456081273/lowsize/02.jpg",
-				"http://res.cloudinary.com/decorabodas/image/upload/v1456081278/lowsize/01.jpg",
-				"http://res.cloudinary.com/decorabodas/image/upload/v1456081275/lowsize/00.jpg"]
-		},
-		{
-		"name":"Set para zapatos",
-		"price":"100€",
-		"tags":["decorativo", "madera"],
-		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1470217683/marblau/IMG_8729.jpg",
-				"http://res.cloudinary.com/decorabodas/image/upload/v1470217725/marblau/IMG_8745.jpg"
-				]
-		},
-		{
-		"name":"Puesto de regalos",
-		"price":"100€",
-		"tags":["decorativo", "madera"],
-		"images":["http://res.cloudinary.com/decorabodas/image/upload/v1470217794/marblau/IMG_8789.jpg",
-				"http://res.cloudinary.com/decorabodas/image/upload/v1470217684/marblau/IMG_8740.jpg"
-				]
-		}
-	]
+{ "name":"Centros de mesa",
+  "products":[
+    {
+    "name":"Centro caja",
+    "price":"10€",
+    "tags":["novios", "centros"],
+    "images":["http://res.cloudinary.com/la-colmena-que-dice-si/image/upload/v1483816120/decorabodas/IMG_9705.jpg",
+        "http://res.cloudinary.com/la-colmena-que-dice-si/image/upload/v1483816175/decorabodas/IMG_9687.jpg",
+        "http://res.cloudinary.com/la-colmena-que-dice-si/image/upload/v1483816111/decorabodas/IMG_9703.jpg"]
+    }
+  ]
+},
+{ "name":"Flor",
+  "products":[
+    {
+    "name":"Ramo",
+    "price":"€",
+    "tags":["novios", "centros"],
+    "images":["http://res.cloudinary.com/la-colmena-que-dice-si/image/upload/v1483815808/decorabodas/IMG_9712.jpg"]
+    },
+    {
+    "name":"Corona de flores",
+    "price":"€",
+    "tags":["novios", "centros"],
+    "images":["http://res.cloudinary.com/la-colmena-que-dice-si/image/upload/v1483815889/decorabodas/IMG_9723.jpg",
+        "http://res.cloudinary.com/la-colmena-que-dice-si/image/upload/v1483815696/decorabodas/IMG_9706.jpg"]
+    }
+  ]
 }
 ]
