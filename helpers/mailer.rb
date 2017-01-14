@@ -13,6 +13,7 @@ module Mailer
 				:from => "decorabodas.es@gmail.com",
 			    :subject => "#{subject}",
 			    :body => "#{name} te ha enviado un mensaje desde la direccion #{mail} diciendo: #{text}",
+          :charset => "UTF-8",
 			    :via => :smtp,
 			    :via_options => {
 			      :address              => 'smtp.gmail.com',
