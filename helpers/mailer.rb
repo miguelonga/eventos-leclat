@@ -21,10 +21,10 @@ module Mailer
 			      :user_name            => 'decorabodas.es',
 			      :password             => ENV["MAIL_PASS"],
 			        :authentication     => :plain, # :plain, :login, :cram_md5, no auth by default
-			        :domain             => 'localhost' # the HELO domain provided by the client to the server
+			        :domain             => 'http://huertask-dev.herokuapp.com' # the HELO domain provided by the client to the server
 			    }
 			)
-			
+
 		end
 	end
 
