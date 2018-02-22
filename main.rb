@@ -11,7 +11,6 @@ include Cloudimages
 catalog = Catalog.new(ProductFile.new("data.json"))
 
 get '/' do
-  @products = catalog.find_products_by("Carteles")
   erb :index
 end
 
@@ -34,15 +33,6 @@ get '/catalogo/ver/:product' do
   @categories = catalog.categories
   erb :product_detail
 end
-
-# get '/blog' do
-#   data = File.read('blog.json')
-#   blog = Json.parse(data)
-#   @posts = []
-#   blog.each {|post| @posts << post}
-#   puts @posts
-#   erb :blog
-# end
 
 get '/contacto' do
   erb :contact

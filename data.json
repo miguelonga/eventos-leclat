@@ -175,7 +175,20 @@
     "tags":["novios", "centros"],
     "images":["http://res.cloudinary.com/la-colmena-que-dice-si/image/upload/v1483815889/decorabodas/IMG_9723.jpg",
         "http://res.cloudinary.com/la-colmena-que-dice-si/image/upload/v1483815696/decorabodas/IMG_9706.jpg"]
+    },
+    {
+    "name":"Arco",
+    "price":"€",
+    "tags":["novios", "flores"],
+    "images":["http://res.cloudinary.com/la-colmena-que-dice-si/image/upload/v1505924270/decorabodas/IMG_0137.jpg",
+        "http://res.cloudinary.com/la-colmena-que-dice-si/image/upload/v1505924362/decorabodas/IMG_0136.jpg",
+        "http://res.cloudinary.com/la-colmena-que-dice-si/image/upload/v1505924208/decorabodas/IMG_0222.jpg",
+        "http://res.cloudinary.com/la-colmena-que-dice-si/image/upload/v1505924431/decorabodas/IMG_0233.jpg",
+        "http://res.cloudinary.com/la-colmena-que-dice-si/image/upload/v1505924478/decorabodas/IMG_1401.jpg",
+        "http://res.cloudinary.com/la-colmena-que-dice-si/image/upload/v1505941150/decorabodas/IMG_1787.png"]
     }
+
+
   ]
 }
 ]

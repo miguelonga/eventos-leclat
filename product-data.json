@@ -1,0 +1,32 @@
+[
+  {
+    "name": "algo",
+    "description": "mas",
+    "category": "bueno",
+    "seo_keywords": "que ",
+    "seo_title": "nada",
+    "seo_slug": "sabes"
+  },
+  {
+    "name": "ey",
+    "description": "que pasa",
+    "category": "bueno",
+    "seo_keywords": "algo quie",
+    "seo_title": "por",
+    "seo_slug": "que"
+  },
+  {
+    "name": "hola",
+    "description": "si",
+    "category": "mi categoria",
+    "seo_keywords": "si",
+    "seo_title": "no ",
+    "seo_slug": "puede"
+  },
+  {
+    "name": "hola amigo",
+    "description": "no",
+    "category": "mi categoria",
+    "seo_keywords": "vale"
+  }
+]
