@@ -4,65 +4,111 @@ require 'googleauth/stores/file_token_store'
 
 require 'fileutils'
 
-module SpreadsheetHelper
+class Spreadsheet
   OOB_URI = 'urn:ietf:wg:oauth:2.0:oob'
   APPLICATION_NAME = 'SpreadSheet Consultor Finametrix'
   SCOPE = Google::Apis::SheetsV4::AUTH_SPREADSHEETS_READONLY
-  SPREADSHEET_ID = '15gjjgS_5Y15rS66JGBZzqUcatMwiRBijHm0GnSWuRW4'
-  PRODUCT_PROPERTIES = ["name", "description", "category", "seo_keywords", "seo_title", "seo_slug"]
+  PRODUCT_PROPERTIES = ["name", "description", "category", "seo_keywords", "seo_title", "slug"]
+  STATIC_PAGES_PAGE = 'Estaticas'
+  SELL_PRODUCTS_PAGE = 'Venta'
+  RENT_PRODUCTS_PAGE = 'Alquiler'
 
-  def catalog
-    file = File.read('./product-data.json')
-    JSON.parse(file)
-  end
+  class << self
 
-  def get_products_by_category(category_name, page_title='Venta')
-    catalog.select {|product| product['category'] == category_name}
-  end
-
-  def write_json
-    products_data = get_products
-    IO.write "./product-data.json", JSON.pretty_generate(products_data)
-  end
-
-  private
-
-  def initialize_service
-    service = Google::Apis::SheetsV4::SheetsService.new
-    service.client_options.application_name = APPLICATION_NAME
-    api_key = 'AIzaSyDfXyiFOLcDAdea3aZrswME6WBoGNCAmnY'
-    service.key = api_key
-    service
-  end
-
-  def get_spreadsheet_data(page_title)
-    service = initialize_service
-    range = "#{page_title.downcase}!A2:F"
-
-    response = service.get_spreadsheet_values(SPREADSHEET_ID, range)
-
-    return [] if response.values.nil? || response.values.empty?
-    build_products(response.values)
-  end
-
-  def get_products(page_title='Venta')
-    products = get_spreadsheet_data(page_title)
-  end
-
-  def build_products(data)
-    products = []
-    data.each do |product|
-      products << build_product_data(product)
+    def static_pages
+      file = File.read('./static-pages-data.csv')
+      file = JSON.parse(file)
+      file.map {|page_data| StaticPage.new(page_data)}
+      # build_objects(file, :page)
     end
-    products
-  end
 
-  def build_product_data(product)
-    product_data = {}
-    product.each_with_index do |value, index|
-      property = PRODUCT_PROPERTIES[index]
-      product_data[property] = value
+    def get_static_page(slug)
+      pages = static_pages
+      # pages = get_spreadsheet_data(STATIC_PAGES_PAGE, :page) unless File.exist?('./static-pages-data.csv')
+      page = pages.select {|page| page.slug == slug}.first
+      raise ArgumentError.new('Page not found') if page.nil?
+      page
     end
-    product_data
+
+    def get_static_pages_by_tag(tag)
+      pages = static_pages
+      pages.select do |page|
+        tags = page.tags
+        tags.include?(tag)
+      end
+    end
+
+    def write_json(spreadsheet_id)
+      @spreadsheet_id = spreadsheet_id
+      static_pages = get_spreadsheet_data(STATIC_PAGES_PAGE, :page)
+      IO.write "./static-pages-data.csv", JSON.pretty_generate(static_pages)
+      self
+    end
+
+    private
+
+    def initialize_service
+      service = Google::Apis::SheetsV4::SheetsService.new
+      service.client_options.application_name = APPLICATION_NAME
+      api_key = 'AIzaSyDfXyiFOLcDAdea3aZrswME6WBoGNCAmnY'
+      service.key = api_key
+      service
+    end
+
+    def get_spreadsheet_data(page_title, data_type)
+      service = initialize_service
+      range = "#{page_title.downcase}!A2:Z"
+
+      response = service.get_spreadsheet_values(@spreadsheet_id, range)
+
+      return [] if response.values.nil? || response.values.empty?
+      response.values
+    end
+
+    def get_products(page_title=SELL_PRODUCTS_PAGE)
+      products = get_spreadsheet_data(page_title, :product)
+    end
+
+    def build_objects(data, type)
+      objects = []
+      data.each do |object|
+        objects << build_object(object, type)
+      end
+      objects
+    end
+
+    def build_object(data, type)
+      product_data = {}
+      return StaticPage.new(data) if type == :page
+      data.each_with_index do |value, index|
+        property = PRODUCT_PROPERTIES[index] if type == :product
+        product_data[property] = value
+      end
+      product_data
+    end
+  end
+end
+
+class StaticPage
+  STATIC_PAGE_PROPERTIES = ["name", "excerpt", "short_description", "description", "cover_image", "seo_keywords", "seo_title", "slug", "tags", "gallery"]
+  attr_reader :name, :excerpt, :short_description, :description, :cover_image, :seo_keywords, :seo_title, :slug, :tags, :gallery
+
+  def initialize(data)
+    page_data = {}
+    data.each_with_index do |value, index|
+      property = STATIC_PAGE_PROPERTIES[index]
+      page_data[property] = value
+    end
+
+    @name = page_data['name'] || ''
+    @excerpt = page_data['excerpt'] || ''
+    @short_description = page_data['short_description'] || ''
+    @description = page_data['description'] || ''
+    @cover_image = page_data['cover_image'] || ''
+    @seo_keywords = page_data['seo_keywords'] || ''
+    @seo_title = page_data['seo_title'] || ''
+    @slug = page_data['slug'] || ''
+    @tags = page_data['tags'] || ''
+    @gallery = (page_data['gallery'] || '').split(', ')
   end
 end

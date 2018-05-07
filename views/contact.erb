@@ -1,27 +1,124 @@
-<link rel="stylesheet" href="../css/contact.css">
 <%= erb :header %>
-<div id="banner-wrapper">
-  <div id="banner" class="box container">
+
+<section class="page-title bg-overlay-black-60 parallax" data-jarallax='{"speed": 0.6}' style="background-image: url(images/bg/02.jpg);">
+  <div class="container">
     <div class="row">
-      <div class="12u 12u(medium)" style="text-align:center">
-        <h2>Contacta con nosotros</h2>
+      <div class="col-lg-12">
+        <div class="page-title-name">
+          <h1>Contacta con nosotros</h1>
+          <p>Haremos tu idea realidad</p>
+        </div>
       </div>
-      <div class="2u 12u(medium)">
-
-      </div>
-      <div class="8u 12u(medium)">
-        <!-- <form action="/send_mail" method="post">
-          <input type="text" name="name" placeholder="Nombre" class="contact">
-          <input type="text" name="email" placeholder="Email" class="contact">
-          <input type="text" name="subject" placeholder="Asunto" class="contact">
-          <textarea name="message" placeholder="Escribe aquí lo que quieres preguntarnos" class="contact"></textarea>
-          <input class="12u" type="submit">
-        </form> -->
-        <span class="movil">Envianos un mail a decorabodas.es@gmail.com</span>
-        <br>
-        <span class="movil">Si lo prefieres, llámanos directamente al 609665855</span>
-      </div>
-
     </div>
   </div>
-</div>
+</section>
+
+<!--=================================
+page-title -->
+
+
+<!--=================================
+ map-->
+
+<section class="white-bg contact-3 o-hidden clearfix">
+   <!-- =============================== -->
+   <div class="container-fluid">
+     <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 contact-add gray-bg h-100">
+             <div class="text-center">
+               <i class="ti-map-alt"></i>
+               <h4 class="mt-15">Dirección</h4>
+               <p>46030 Valencia, C/Cuba, 71, bajo izq</p>
+              </div>
+             </div>
+             <div class="col-lg-4 col-md-4 col-sm-4 contact-add theme-bg h-100">
+              <div class="text-center">
+               <i class="ti-mobile text-white"></i>
+               <h4 class="text-white mt-15">Teléfono</h4>
+               <p class="text-white">+(34) 626-926-121</p>
+              </div>
+             </div>
+             <div class="col-lg-4 col-md-4 col-sm-4 contact-add  black-bg h-100">
+             <div class="text-center">
+               <i class="ti-email text-white"></i>
+               <h4 class="text-white mt-15">Mail</h4>
+               <p class="text-white">leclateventos@gmail.com</p>
+             </div>
+           </div>
+          </div>
+    </div>
+   <div class="container-fluid pos-r">
+    <div class="row  full-height">
+    <div class="col-lg-6 map-side g-map" id="map" data-type='black'>
+       <div class="contact-map">
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="container">
+  <div class="row justify-content-end">
+      <div class="col-lg-5">
+      <div class="contact-3-info page-section-ptb">
+       <div class="clearfix">
+          <div class="section-title mb-0">
+           <h6>Deja que te ayudemos</h6>
+           <h2 class="title-effect">Contacta</h2>
+           </div>
+           <p class="mb-50">Nos encantaría saber de ti! Sea por lo que sea estaremos encantados de ayudarte. Pide presupuesto o simplemente charla con nosotros.</p>
+            <div id="formmessage">Mensaje enviado correctamente</div>
+             <form id="contactform" role="form" method="post" action="php/contact-form.php">
+               <div class="contact-form clearfix">
+                  <div class="section-field">
+                    <input id="name" type="text" placeholder="Nombre*" class="form-control"  name="name">
+                   </div>
+                   <div class="section-field">
+                      <input type="email" placeholder="Email*" class="form-control" name="email">
+                    </div>
+                   <div class="section-field">
+                      <input type="text" placeholder="Teléfono*" class="form-control" name="phone">
+                    </div>
+                   <div class="section-field textarea">
+                     <textarea class="input-message form-control" placeholder="Comentario*"  rows="7" name="message"></textarea>
+                    </div>
+                    <!-- Google reCaptch-->
+                    <div class="g-recaptcha section-field clearfix" data-sitekey="[Add your site key]"></div>
+                    <div class="section-field submit-button">
+                    <input type="hidden" name="action" value="sendEmail"/>
+                     <button id="submit" name="submit" type="submit" value="Send" class="button"><span> Enviar mensaje </span> <i class="fa fa-paper-plane"></i></button>
+                    </div>
+                    </div>
+                  </form>
+                 <div id="ajaxloader" style="display:none"><img class="mx-auto mt-30 mb-30 d-block" src="/images/pre-loader/loader-02.svg" alt=""></div>
+              </div>
+         </div>
+    </div>
+    </div>
+    </div>
+</section>
+
+
+<!--=================================
+map -->
+
+
+<!--=================================
+action box- -->
+
+<section class="action-box theme-bg full-width">
+  <div class="container">
+    <div class="row">
+     <div class="col-lg-12 col-md-12">
+       <div class="action-box-text">
+        <h3><strong> Webster: </strong> The most powerful template ever on the market</h3>
+        <p>Create tailor-cut websites with the exclusive multi-purpose responsive template along with powerful features.</p>
+      </div>
+      <div class="action-box-button">
+        <a class="button button-border white" href="#">
+          <span>Purchase Now</span>
+          <i class="fa fa-download"></i>
+       </a>
+     </div>
+    </div>
+  </div>
+ </div>
+</section>

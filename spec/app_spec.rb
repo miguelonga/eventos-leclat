@@ -1,22 +1,33 @@
-require './helpers/dson'
+require './helpers/spreadsheet'
 
-describe 'Dson' do
-  let(:dson) { Dson.new('./data_test.json') }
-
-  it 'find products by category' do
-    products_in_test = [{"name"=>"First product", "price"=>"10€", "tags"=>["tag", "second_tag"], "images"=>["first_image", "second_image"]}, {"name"=>"Second product", "price"=>"10€", "tags"=>["tag", "second_tag"], "images"=>["first_image", "second_image"]}]
-
-    expect(dson.find_products_by("Test")).to eq products_in_test
+describe 'Spreadsheet Service' do
+  before(:all) do
+    @spreadsheet = Spreadsheet.write_json('1FS9qHn-vl9go5OkJG67yfhungizypCLx5DPLg6cq8sw')
   end
-  it 'find an specific product by its name' do
-    product = [{"name"=>"First product", "price"=>"10€", "tags"=>["tag", "second_tag"], "images"=>["first_image", "second_image"]}]
 
-    expect(dson.find_product("First product")).to eq product
+  it 'create a page by an array' do
+    page = @spreadsheet.get_static_page('test-slug')
+    expect(page.class).to eq(StaticPage)
   end
-  it 'find related products for a given product' do
-    product = [{"name"=>"First product", "price"=>"10€", "tags"=>["tag", "second_tag"], "images"=>["first_image", "second_image"]}]
-    related_products = [{"name"=>"Second product", "price"=>"10€", "tags"=>["tag", "second_tag"], "images"=>["first_image", "second_image"]}, {"name"=>"First product other cat", "price"=>"10€", "tags"=>["tag", "second_tag"], "images"=>["first_image", "second_image"]}, {"name"=>"Second product", "price"=>"10€", "tags"=>["tag", "second_tag"], "images"=>["first_image", "second_image"]}]
 
-    expect(dson.find_related_products(product)).to eq related_products
+  it 'retrieves a static page by slug' do
+    page = @spreadsheet.get_static_page('test-slug')
+    expect(page.name).to eq('test name')
+  end
+
+  it 'serves an empty static page with invalid slug' do
+    expect {
+      @spreadsheet.get_static_page('invalid-slug')
+    }.to raise_error(ArgumentError, 'Page not found')
+  end
+
+  it 'retrieves all static pages by tag' do
+    pages = @spreadsheet.get_static_pages_by_tag('test')
+    expect(pages.size).to eq(1)
+  end
+
+  it 'dont fail if there arent tags' do
+    pages = @spreadsheet.get_static_pages_by_tag('undefined_tag')
+    expect(pages.size).to eq(0)
   end
 end

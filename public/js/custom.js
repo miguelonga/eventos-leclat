@@ -16,9 +16,9 @@ NOTE: This file contains all scripts for the actual Template.
 :: Tooltip
 :: Preloader
 :: Mega menu
-:: Owl carousel 
+:: Owl carousel
 :: Raindrops
-:: Php Contact Form 
+:: Php Contact Form
 :: Counter
 :: Isotope
 :: Masonry
@@ -51,14 +51,14 @@ NOTE: This file contains all scripts for the actual Template.
 [ End table content ]
 ======================================*/
 //POTENZA var
- 
+
  (function($){
   "use strict";
   var POTENZA = {};
 
   /*************************
   Predefined Variables
-*************************/ 
+*************************/
 var $window = $(window),
     $document = $(document),
     $body = $('body'),
@@ -79,19 +79,19 @@ var $window = $(window),
 *************************/
   $('[data-toggle="tooltip"]').tooltip();
   $('[data-toggle="popover"]').popover()
-  
+
 /*************************
         Preloader
-*************************/  
+*************************/
   POTENZA.preloader = function () {
        $("#load").fadeOut();
        $('#pre-loader').delay(0).fadeOut('slow');
    };
- 
+
 /*************************
        Mega menu
-*************************/    
- POTENZA.megaMenu = function () { 
+*************************/
+ POTENZA.megaMenu = function () {
     loadScript(plugin_path + 'mega-menu/mega_menu.js', function() {
       var nav =  $('#menu');
       var l = nav.attr('data-pos');
@@ -128,11 +128,11 @@ var $window = $(window),
   }
 
   /*************************
-       owl carousel 
+       owl carousel
 *************************/
     POTENZA.carousel = function () {
       var owlslider = jQuery("div.owl-carousel");
-      if(owlslider.length > 0) {  
+      if(owlslider.length > 0) {
          loadScript(plugin_path + 'owl-carousel/owl-carousel.min.js', function() {
            owlslider.each(function () {
             var $this = $(this),
@@ -144,8 +144,8 @@ var $window = $(window),
                 $autospeed = ($this.attr('data-autospeed')) ? $this.data('autospeed') : 5000,
                 $smartspeed = ($this.attr('data-smartspeed')) ? $this.data('smartspeed') : 1000,
                 $autohgt = ($this.data('autoheight')) ? $this.data('autoheight') : false,
-                $space = ($this.attr('data-space')) ? $this.data('space') : 30;    
-           
+                $space = ($this.attr('data-space')) ? $this.data('space') : 30;
+
                 $(this).owlCarousel({
                     loop: $loop,
                     items: $items,
@@ -164,13 +164,13 @@ var $window = $(window),
                     nav: $navarrow,
                     navText:["<i class='fa fa-angle-left fa-2x'></i>","<i class='fa fa-angle-right fa-2x'></i>"],
                     autoplay: $autoplay,
-                    autoplayHoverPause: true   
-                }); 
-           }); 
+                    autoplayHoverPause: true
+                });
+           });
          });
       }
     }
-    
+
 /*************************
       raindrops
 *************************/
@@ -184,7 +184,7 @@ POTENZA.raindrops = function () {
 };
 
 /*************************
-  PHP Contact Form 
+  PHP Contact Form
 *************************/
  POTENZA.contactform = function () {
       $( "#contactform" ).submit(function( event ) {
@@ -197,31 +197,31 @@ POTENZA.raindrops = function () {
             success:function(response){
               $("#ajaxloader").hide();
               $("#contactform").show();
-              
+
               $("#formmessage").html(response).show().delay(20000).fadeOut('slow');
             }
           });
           event.preventDefault();
         });
     }
- 
+
  /*************************
        counter
-*************************/  
+*************************/
  POTENZA.counters = function () {
   var counter = jQuery(".counter");
-  if(counter.length > 0) {  
+  if(counter.length > 0) {
       loadScript(plugin_path + 'counter/jquery.countTo.js', function() {
         $counter.each(function () {
-         var $elem = $(this);                 
+         var $elem = $(this);
            $elem.appear(function () {
              $elem.find('.timer').countTo();
-          });                  
+          });
         });
       });
     }
   };
- 
+
 /*************************
          Isotope
 *************************/
@@ -229,7 +229,7 @@ POTENZA.Isotope = function () {
    loadScript(plugin_path + 'isotope/isotope.pkgd.min.js', function() {
       var $isotope = $(".isotope"),
           $itemElement = '.grid-item',
-          $filters = $('.isotope-filters');      
+          $filters = $('.isotope-filters');
         if ($isotope.exists()) {
             $isotope.isotope({
             resizable: true,
@@ -237,15 +237,15 @@ POTENZA.Isotope = function () {
               masonry: {
                 gutterWidth: 10
               }
-            });     
+            });
        $filters.on( 'click', 'button', function() {
          var $val = $(this).attr('data-filter');
-             $isotope.isotope({ filter: $val });       
+             $isotope.isotope({ filter: $val });
              $filters.find('.active').removeClass('active');
              $(this).addClass('active');
-      });     
+      });
     }
-   }); 
+   });
 }
 
 /*************************
@@ -256,7 +256,7 @@ POTENZA.masonry = function () {
     setTimeout(function() {
       var $masonry = $('.masonry-main .masonry'),
           $itemElement = '.masonry-main .masonry-item',
-          $filters = $('.masonry-main .isotope-filters');  
+          $filters = $('.masonry-main .isotope-filters');
           if ($masonry.exists()) {
             $masonry.isotope({
               resizable: true,
@@ -264,7 +264,7 @@ POTENZA.masonry = function () {
               itemSelector: $itemElement,
               masonry: {
                 gutterWidth: 0
-              }              
+              }
             });
                // bind filter button click
            $filters.on( 'click', 'button', function() {
@@ -278,15 +278,15 @@ POTENZA.masonry = function () {
               $buttonGroup.find('.active').removeClass('active');
               $(this).addClass('active');
             });
-          }); 
-       } 
-        }, 100); 
-   }); 
+          });
+       }
+        }, 100);
+   });
   }
 
 /*************************
     Magnific Popup
-*************************/  
+*************************/
   POTENZA.mediaPopups = function () {
      if ($(".popup-single").exists() || $(".popup-gallery").exists() || $('.modal-onload').exists() || $(".popup-youtube, .popup-vimeo, .popup-gmaps").exists()) {
       loadScript(plugin_path + 'magnific-popup/jquery.magnific-popup.min.js', function() {
@@ -310,7 +310,7 @@ POTENZA.masonry = function () {
                           return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
                       }
                  }
-             }); 
+             });
           }
         if ($(".popup-youtube, .popup-vimeo, .popup-gmaps").exists()) {
                   $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
@@ -343,7 +343,7 @@ POTENZA.masonry = function () {
                   }, 0)
               }, 1500);
          }
-       }); 
+       });
     }
   }
 
@@ -388,11 +388,11 @@ POTENZA.masonry = function () {
             return false;
         });
       });
-  } 
+  }
 
 /*************************
      audio video
-*************************/ 
+*************************/
     POTENZA.mediav = function () {
       if ($(".audio-video").exists()) {
         loadScript(plugin_path + 'mediaelement-and-player/mediaelement-and-player.js', function() {
@@ -403,7 +403,7 @@ POTENZA.masonry = function () {
 
  /*************************
        Progressbar
-*************************/  
+*************************/
     POTENZA.progressBar = function () {
         if ($progressBar.exists()) {
             $progressBar.each(function (i, elem) {
@@ -433,7 +433,7 @@ POTENZA.masonry = function () {
             });
         }
     };
- 
+
 /*************************
          Countdown
 *************************/
@@ -450,24 +450,24 @@ POTENZA.masonry = function () {
 
 /*********************************
          Mobile slider
-*********************************/  
-    POTENZA.mobileslider = function () { 
+*********************************/
+    POTENZA.mobileslider = function () {
         var mobileslider = jQuery("#mobile-slider");
-          if(mobileslider.length > 0) { 
+          if(mobileslider.length > 0) {
              loadScript(plugin_path + 'mobile-slider/zenith.min.js', function() {
                $('#mobile-slider').zenith({
-                layout: 'mobile-slider' , 
-                slideSpeed: 450, 
+                layout: 'mobile-slider' ,
+                slideSpeed: 450,
                 autoplaySpeed: 2000
             });
         });
       }
     }
- 
+
 /*************************
         One page
 *************************/
-    POTENZA.onepagenav = function () { 
+    POTENZA.onepagenav = function () {
 
             // Cache selectors
       var lastId,
@@ -486,10 +486,10 @@ POTENZA.masonry = function () {
       menuItems.on('click', function(e) {
         var href = $(this).attr("href"),
             offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
-        $('html, body').stop().animate({ 
+        $('html, body').stop().animate({
             scrollTop: offsetTop
         }, 1200);
-        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) { 
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
           $('#onepagenav .menu-mobile-collapse-trigger,.vertical-header a.but').click();
         }
         e.preventDefault();
@@ -499,7 +499,7 @@ POTENZA.masonry = function () {
       $window.scroll(function(){
          // Get container scroll position
          var fromTop = $(this).scrollTop()+topMenuHeight;
-         
+
          // Get id of current scroll item
          var cur = scrollItems.map(function(){
            if ($(this).offset().top < fromTop)
@@ -508,21 +508,21 @@ POTENZA.masonry = function () {
          // Get the id of the current element
          cur = cur[cur.length-1];
          var id = cur && cur.length ? cur[0].id : "";
-         
+
          if (lastId !== id) {
              lastId = id;
              // Set/remove active class
              menuItems
                .parent().removeClass("active")
                .end().filter("[href='#"+id+"']").parent().addClass("active");
-         }                   
+         }
       });
 
          $("#myNavbar a,.move").on('click', function(event) {
             if (this.hash !== "") {
                event.preventDefault();
-                var hash = this.hash; 
-                var offsetheight = 0;          
+                var hash = this.hash;
+                var offsetheight = 0;
                 if($('nav').hasClass('affix-top')){
                     offsetheight = 100;
                 }
@@ -530,7 +530,7 @@ POTENZA.masonry = function () {
                   scrollTop: $(hash).offset().top - offsetheight
                  }, 800, function(){
                  window.location.hash = hash;
-               });          
+               });
               } // End if
              if($('.navbar-toggle').css('display') != 'none'){
                $(".navbar-toggle").trigger( "click" );
@@ -540,8 +540,8 @@ POTENZA.masonry = function () {
 
   /*************************
         NiceScroll
-*************************/ 
-    POTENZA.pniceScroll = function () { 
+*************************/
+    POTENZA.pniceScroll = function () {
         loadScript(plugin_path + 'nicescroll/jquery.nicescroll.js', function() {
         $(".scrollbar").niceScroll({
           scrollspeed: 150,
@@ -554,7 +554,7 @@ POTENZA.masonry = function () {
           horizrailenabled: false,
           cursorborderradius: 0,
         });
-       });  
+       });
     }
 
 /*************************
@@ -562,33 +562,33 @@ POTENZA.masonry = function () {
 *************************/
   POTENZA.mailchimp = function () {
          $(document).on('click','#mc-embedded-subscribe',function(event){
-          event.preventDefault();       
+          event.preventDefault();
           var email_id = $('#mce-EMAIL').val();
-          var val_email_id = validateEmail(email_id);        
+          var val_email_id = validateEmail(email_id);
           if (email_id != "" && val_email_id === true) {
               var failure_message = 'Whoops, looks like there was a problem. Please try again later.';
               var memberid=email_id.toLowerCase();
               var url = memberid;
-              
+
               $.ajax({
                  type: 'POST',
                  url: 'php/mailchimp-action.php',
                  data: {url:url},
                  dataType: 'json',
                  success: function(data){
-                      $('#msg').html(data);           
+                      $('#msg').html(data);
                  },
               });
           } else {
-              $('#msg').html('<p style="color: #EA4335">Enter the E-mail id</p>'); 
-              return false;    
+              $('#msg').html('<p style="color: #EA4335">Enter the E-mail id</p>');
+              return false;
           }
           return false;
       });
       function validateEmail(email) {
           var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
           return re.test(email);
-      }             
+      }
    }
 
 /****************************************************
@@ -647,7 +647,7 @@ POTENZA.datetimepick = function () {
 
 /*************************
       DataTable
-*************************/  
+*************************/
 POTENZA.datatables = function () {
    if ($('#datatable').exists()) {
        loadScript(plugin_path + 'bootstrap-datatables/jquery.dataTables.min.js', function() {
@@ -670,8 +670,8 @@ POTENZA.wowanimation = function () {
         });
        wow.init();
      }
-  } 
- 
+  }
+
 /*************************
        Google.maps
 *************************/
@@ -687,35 +687,35 @@ POTENZA.googlemaps = function () {
             else if(color === 'light') clr = [{"featureType":"administrative.locality","elementType":"all","stylers":[{"hue":"#2c2e33"},{"saturation":7},{"lightness":19},{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"hue":"#ffffff"},{"saturation":-100},{"lightness":100},{"visibility":"simplified"}]},{"featureType":"poi","elementType":"all","stylers":[{"hue":"#ffffff"},{"saturation":-100},{"lightness":100},{"visibility":"off"}]},{"featureType":"road","elementType":"geometry","stylers":[{"hue":"#bbc0c4"},{"saturation":-93},{"lightness":31},{"visibility":"simplified"}]},{"featureType":"road","elementType":"labels","stylers":[{"hue":"#bbc0c4"},{"saturation":-93},{"lightness":31},{"visibility":"on"}]},{"featureType":"road.arterial","elementType":"labels","stylers":[{"hue":"#bbc0c4"},{"saturation":-93},{"lightness":-2},{"visibility":"simplified"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"hue":"#e9ebed"},{"saturation":-90},{"lightness":-8},{"visibility":"simplified"}]},{"featureType":"transit","elementType":"all","stylers":[{"hue":"#e9ebed"},{"saturation":10},{"lightness":69},{"visibility":"on"}]},{"featureType":"water","elementType":"all","stylers":[{"hue":"#e9ebed"},{"saturation":-78},{"lightness":67},{"visibility":"simplified"}]}]
             else if(color === 'grey') clr = [{"featureType":"landscape","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"stylers":[{"hue":"#00aaff"},{"saturation":-100},{"gamma":2.15},{"lightness":12}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"lightness":24}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":57}]}]
             else if(color ==='blackandwhite') clr = [{"featureType":"water","elementType":"all","stylers":[{"hue":"#ffffff"},{"saturation":-100},{"lightness":100},{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"hue":"#ffffff"},{"saturation":-100},{"lightness":100},{"visibility":"on"}]},{"featureType":"road","elementType":"geometry","stylers":[{"hue":"#000000"},{"saturation":-100},{"lightness":-100},{"visibility":"simplified"}]},{"featureType":"road","elementType":"labels","stylers":[{"hue":"#ffffff"},{"saturation":-100},{"lightness":100},{"visibility":"off"}]},{"featureType":"poi","elementType":"all","stylers":[{"hue":"#ffffff"},{"saturation":-100},{"lightness":100},{"visibility":"off"}]},{"featureType":"administrative","elementType":"all","stylers":[{"hue":"#ffffff"},{"saturation":0},{"lightness":100},{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"hue":"#000000"},{"saturation":0},{"lightness":-100},{"visibility":"on"}]},{"featureType":"transit","elementType":"labels","stylers":[{"hue":"#ffffff"},{"saturation":0},{"lightness":100},{"visibility":"off"}]}]
-            google.maps.event.addDomListener(window, 'load', init(id,clr));   
+            google.maps.event.addDomListener(window, 'load', init(id,clr));
          });
          function init(id,clr) {
                 var mapOptions = {
-                    zoom: 11,
-                    center: new google.maps.LatLng(-37.817078, 144.955936), //Update Latitude and Longitude here
-                    styles:clr 
+                    zoom: 17.5,
+                    center: new google.maps.LatLng(39.4568754, -0.3749872), //Update Latitude and Longitude here
+                    styles:clr
                 };
                 var mapElement = document.getElementById(id);
                 var map = new google.maps.Map(mapElement, mapOptions);
                 var marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(40.6700, -73.9400),
+                    position: new google.maps.LatLng(39.4587754, -0.3745872),
                     map: map,
                     title: 'Snazzy!'
                 });
           }
        });
     }
-} 
+}
 
 /*************************
       select
-*************************/ 
+*************************/
 POTENZA.fancyselect = function () {
   if ($('.fancyselect').exists()) {
     loadScript(plugin_path + 'jquery-nice-select/jquery-nice-select.js', function() {
-       $('select.fancyselect:not(.ignore)').niceSelect();      
+       $('select.fancyselect:not(.ignore)').niceSelect();
       });
-    }     
+    }
 };
 
 /*************************
@@ -725,12 +725,12 @@ POTENZA.typer = function () {
   if ($('.typer').exists()) {
     loadScript(plugin_path + 'typer/jquery.typer.js', function() {
       });
-    }     
+    }
 };
 
 /*************************
        Search
-*************************/ 
+*************************/
 POTENZA.searchbox = function () {
    if (jQuery('.search').exists()) {
       jQuery('.search-btn').on("click", function () {
@@ -748,8 +748,8 @@ POTENZA.searchbox = function () {
 
 /*************************
        cart
-*************************/ 
-POTENZA.cartbox = function () { 
+*************************/
+POTENZA.cartbox = function () {
       $(".cart-btn").on("click", function (e) {
           $(".shpping-cart .cart").toggleClass('cart-open');
           e.stopPropagation();
@@ -763,8 +763,8 @@ POTENZA.cartbox = function () {
 
  /*************************
         menu left-header
-*************************/ 
-POTENZA.mobileview = function () { 
+*************************/
+POTENZA.mobileview = function () {
     $('a.but').on("click", function (e) {
         if(!$(this).hasClass('active')){
           $(this).addClass('active');
@@ -774,9 +774,9 @@ POTENZA.mobileview = function () {
           $('#left-header').animate({'margin-left':0},300);
         }
       return false;
-    });  
+    });
 };
-POTENZA.googlemapopen = function () { 
+POTENZA.googlemapopen = function () {
  $(".map-icon").on("click", function (e) {
   jQuery('.google-map').toggleClass("google-map-open");
  });
@@ -785,27 +785,27 @@ POTENZA.googlemapopen = function () {
 /*************************
         sidepanel
 *************************/
-POTENZA.sidepanel = function () { 
+POTENZA.sidepanel = function () {
    $(".st-pusher").on("click", function (e) {
      if($(e.target).closest(".st-menu").length === 0)
         if($body.hasClass('st-menu-open')) {
            $body.toggleClass("st-menu-open");
-             return false; 
+             return false;
          }
    });
     $(".side-panel-trigger" ).on("click", function () {
       $body.toggleClass("st-menu-open");
-      return false; 
+      return false;
    });
     $(".admin-sidebar-toggler" ).on("click", function () {
       $body.toggleClass("sidebar-icon-only");
-      return false; 
+      return false;
    });
 };
 
  /*************************
         slickslider
-*************************/ 
+*************************/
 POTENZA.slickslider = function () {
   if ($('.slider-for').exists()) {
     loadScript(plugin_path + 'slick/slick.min.js', function() {
@@ -824,20 +824,20 @@ POTENZA.slickslider = function () {
           focusOnSelect: true
         });
      });
-   }     
+   }
 };
 
  /*************************
         stickyFooter
-*************************/ 
-POTENZA.stickyFooter = function () { 
+*************************/
+POTENZA.stickyFooter = function () {
   var  $footerfixed = $("#footer-fixed");
      if ($footerfixed.exists()) {
        var footerheight = $('#footer-fixed').height();
         $('.wrapper').css('margin-bottom',(footerheight + "px"))
        }
     };
- 
+
 /****************************************************
           javascript
 ****************************************************/
@@ -886,7 +886,7 @@ var _arr  = {};
         POTENZA.mobileslider(),
         POTENZA.onepagenav(),
         POTENZA.mediaPopups(),
-        POTENZA.pniceScroll(),        
+        POTENZA.pniceScroll(),
         POTENZA.datetimepick(),
         POTENZA.datatables(),
         POTENZA.wowanimation(),

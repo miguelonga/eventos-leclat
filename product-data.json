@@ -1,32 +1,107 @@
 [
   {
-    "name": "algo",
-    "description": "mas",
-    "category": "bueno",
-    "seo_keywords": "que ",
-    "seo_title": "nada",
-    "seo_slug": "sabes"
+    "name": "iniciales de madera 40X30",
+    "description": "tu nombre con flores grande",
+    "category": "6"
   },
   {
-    "name": "ey",
-    "description": "que pasa",
-    "category": "bueno",
-    "seo_keywords": "algo quie",
-    "seo_title": "por",
-    "seo_slug": "que"
+    "name": "iniciales de madera 20X15",
+    "description": "tu nombre con flores mediana",
+    "category": "6"
   },
   {
-    "name": "hola",
-    "description": "si",
-    "category": "mi categoria",
-    "seo_keywords": "si",
-    "seo_title": "no ",
-    "seo_slug": "puede"
+    "name": "iniciales de carton 10X10",
+    "description": "tu nombre con flores pequeña",
+    "category": "6"
   },
   {
-    "name": "hola amigo",
-    "description": "no",
-    "category": "mi categoria",
-    "seo_keywords": "vale"
+  },
+  {
+    "name": "cajas decoradas",
+    "description": "decoradas con papel",
+    "category": "7"
+  },
+  {
+    "name": "cajas decoradas",
+    "description": "pintadas con pintura de tiza",
+    "category": "7"
+  },
+  {
+    "name": "cajas de madera",
+    "description": "de diferentes tamaños ",
+    "category": "7"
+  },
+  {
+  },
+  {
+    "name": "set de arroz",
+    "description": "cucuruchos de kraft con caja 50 uni.",
+    "category": "8"
+  },
+  {
+    "name": "set de arroz",
+    "description": "cucuruchos de arpillera con caja 50 uni ",
+    "category": "8"
+  },
+  {
+    "name": "set de arroz",
+    "description": "bolsitas de tela uni.",
+    "category": "8"
+  },
+  {
+  },
+  {
+    "name": "capazos pintados",
+    "description": "capazos pequeños",
+    "category": "9"
+  },
+  {
+    "name": "capazos pequeños",
+    "description": "capazos con flores secas",
+    "category": "9"
+  },
+  {
+    "name": "capazos medianos",
+    "description": "capazos con flores naturales",
+    "category": "9"
+  },
+  {
+  },
+  {
+    "name": "coronas de flor",
+    "description": "coronas de flor seca",
+    "category": "10"
+  },
+  {
+    "name": "coronas de flor",
+    "description": "coronas de flor de tela ",
+    "category": "10"
+  },
+  {
+    "name": "coronas de flor",
+    "description": "coronas de flor natural",
+    "category": "10"
+  },
+  {
+  },
+  {
+    "name": "set para el calor",
+    "description": " abanicos o pay pay",
+    "category": "11"
+  },
+  {
+    "name": "set para el calor",
+    "description": "gafas de sol",
+    "category": "11"
+  },
+  {
+    "name": "set para el calor",
+    "description": "sombreros y pamelas",
+    "category": "11"
+  },
+  {
+    "name": "set para el calor",
+    "description": "sombrillas",
+    "category": "11"
   }
 ]

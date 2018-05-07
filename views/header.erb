@@ -40,7 +40,8 @@
         <!-- menu logo -->
         <ul class="menu-logo">
             <li>
-                <a href="index-01.html"><img id="logo_img" src="images/logo.png" alt="logo"> </a>
+                <!-- <a href="/"><img id="logo_img" src="/images/logo.png" alt="logo"> </a> -->
+                <a href="/"><h1 class="logo">L'eclat</h1></a>
             </li>
         </ul>
         <!-- menu links -->
@@ -49,86 +50,45 @@
             <li class="active"><a href="javascript:void(0)"> Servicios <i class="fa fa-angle-down fa-indicator"></i></a>
                  <!-- drop down multilevel  -->
                 <ul class="drop-down-multilevel">
-                    <li><a href="javascript:void(0)">Bodas<i class="ti-plus fa-indicator"></i></a>
-                      <ul class="drop-down-multilevel">
+                    <li><a href="/decoracion-para-bodas">Bodas</a>
+                      <!-- <ul class="drop-down-multilevel">
 
                         <li><a href="header-default.html">Seating plan</a></li>
                         <li><a href="header-default.html">Photocall</a></li>
                         <li><a href="header-default.html">Ceremonias</a></li>
+                        <li><a href="header-default.html">Centros de mesa</a></li>
+                        <li><a href="header-default.html">Ramos de novia</a></li>
+                        <li><a href="header-default.html">Rincones cucos</a></li>
                         <li><a href="header-default.html">Candy bar</a></li>
                         <li><a href="header-default.html">Cigar corner</a></li>
 
-                      </ul>
+                      </ul> -->
                     </li>
 
-                    <li><a href="javascript:void(0)">Comuniones<i class="ti-plus fa-indicator"></i></a>
-                      <ul class="drop-down-multilevel">
+                    <li><a href="/decoracion-para-comuniones">Comuniones</a>
+                      <!-- <ul class="drop-down-multilevel">
 
                         <li><a href="header-default.html">Mesa infantil</a></li>
                         <li><a href="header-default.html">Candy bar</a></li>
                         <li><a href="header-default.html">Photocall</a></li>
                         <li><a href="header-default.html">Coronas de flores</a></li>
 
-                      </ul>
+                      </ul> -->
                     </li>
                 </ul>
             </li>
 
-            <li><a href="javascript:void(0)"> Espacios <i class="fa fa-angle-down fa-indicator"></i></a>
+            <li><a href="javascript:void(0)"> Espacios & Catering <i class="fa fa-angle-down fa-indicator"></i></a>
                  <!-- drop down multilevel  -->
                 <ul class="drop-down-multilevel">
-                    <li>
-                      <a href="javascript:void(0)">Kike Peris (Randurías)</a>
-                    </li>
-
-                    <li>
-                      <a href="javascript:void(0)">Finca el campillo</a>
-                    </li>
-
-                    <li>
-                      <a href="javascript:void(0)">Masia San Agustín</a>
-                    </li>
+                    <%= paint_static_pages_list_by_tag('espacios') %>
                 </ul>
             </li>
 
-            <li><a href="javascript:void(0)"> Papelería <i class="fa fa-angle-down fa-indicator"></i></a>
+            <li><a href="javascript:void(0)"> Floristeria <i class="fa fa-angle-down fa-indicator"></i></a>
                  <!-- drop down multilevel  -->
                 <ul class="drop-down-multilevel">
-                    <li><a href="javascript:void(0)">Boda<i class="ti-plus fa-indicator"></i></a>
-                      <ul class="drop-down-multilevel">
-
-                        <li>
-                          <a href="javascript:void(0)">Invitaciones</a>
-                        </li>
-
-                        <li>
-                          <a href="javascript:void(0)">Minuta</a>
-                        </li>
-
-                        <li>
-                          <a href="javascript:void(0)">Número de mesa</a>
-                        </li>
-
-                      </ul>
-                    </li>
-
-                    <li><a href="javascript:void(0)">Comuniones<i class="ti-plus fa-indicator"></i></a>
-                      <ul class="drop-down-multilevel">
-
-                        <li>
-                          <a href="javascript:void(0)">Invitaciones</a>
-                        </li>
-
-                        <li>
-                          <a href="javascript:void(0)">Minuta</a>
-                        </li>
-
-                        <li>
-                          <a href="javascript:void(0)">Papelería</a>
-                        </li>
-
-                      </ul>
-                    </li>
+                  <%= paint_static_pages_list_by_tag('floristeria') %>
                 </ul>
             </li>
 
@@ -196,65 +156,14 @@
             </li>
 
             <li>
-              <a href="javascript:void(0)"> Quienes somos </a>
+              <a href="/quienes-somos/page"> Quienes somos </a>
             </li>
 
             <li>
-              <a href="javascript:void(0)"> Contacto </a>
+              <a href="/contacto"> Contacto </a>
             </li>
 
         </ul>
-        <div class="search-cart">
-          <div class="search">
-            <a class="search-btn not_click" href="javascript:void(0);"></a>
-              <div class="search-box not-click">
-                 <input type="text" class="not-click form-control" placeholder="Search" value="" name="s">
-                <button class="search-button" type="submit"> <i class="fa fa-search not-click"></i></button>
-           </div>
-          </div>
-          <div class="shpping-cart">
-           <a class="cart-btn" href="#"> <i class="fa fa-shopping-cart icon"></i> <strong class="item">2</strong></a>
-            <div class="cart">
-              <div class="cart-title">
-                 <h6 class="uppercase mb-0">Shopping cart</h6>
-              </div>
-              <div class="cart-item">
-                <div class="cart-image">
-                  <img class="img-fluid" src="images/shop/01.jpg" alt="">
-                </div>
-                <div class="cart-name clearfix">
-                  <a href="#">Product name <strong>x2</strong> </a>
-                  <div class="cart-price">
-                    <del>$24.99</del> <ins>$12.49</ins>
-                 </div>
-                </div>
-                <div class="cart-close">
-                    <a href="#"> <i class="fa fa-times-circle"></i> </a>
-                 </div>
-              </div>
-              <div class="cart-item">
-                <div class="cart-image">
-                  <img class="img-fluid" src="images/shop/01.jpg" alt="">
-                </div>
-                <div class="cart-name clearfix">
-                  <a href="#">Product name <strong>x2</strong></a>
-                  <div class="cart-price">
-                    <del>$24.99</del> <ins>$12.49</ins>
-                 </div>
-                </div>
-                 <div class="cart-close">
-                    <a href="#"> <i class="fa fa-times-circle"></i> </a>
-                 </div>
-              </div>
-              <div class="cart-total">
-                <h6 class="mb-15"> Total: $104.00</h6>
-                <a class="button" href="shop-shopping-cart.html">View Cart</a>
-                <a class="button black" href="shop-checkout.html">Checkout</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
        </div>
       </div>
      </div>

@@ -1,37 +1,34 @@
 require 'sinatra'
 require 'json'
-require 'dotenv'
-require './helpers/mailer'
-require './helpers/cloudinary'
-require './helpers/catalog'
+require './helpers/spreadsheet'
+require './helpers/render'
 
-include Mailer
-include Cloudimages
+helpers do
+  include Render
+end
 
-catalog = Catalog.new(ProductFile.new("data.json"))
+# spreadsheet = Spreadsheet.write_json('15gjjgS_5Y15rS66JGBZzqUcatMwiRBijHm0GnSWuRW4')
+spreadsheet = Spreadsheet
 
 get '/' do
   erb :index
 end
 
-get '/catalogo' do
-  @products = catalog.products
-  @categories = catalog.categories
-  erb :catalog
+get '/:slug/page' do
+  @static_page = spreadsheet.get_static_page(params[:slug])
+  erb :static_page
 end
 
-get '/catalogo/find/:find_by' do
-  @products = catalog.find_products_by(params[:find_by])
-  @categories = catalog.categories
-  @breadcrumb = params[:find_by]
-  erb :catalog
+get '/decoracion-para-bodas' do
+  @static_page = spreadsheet.get_static_page('decoracion-para-bodas')
+  @static_pages = spreadsheet.get_static_pages_by_tag('bodas')
+  erb :static_pages_by_tag
 end
 
-get '/catalogo/ver/:product' do
-  @product = catalog.find_product(params[:product])
-  @related_products = catalog.find_related_products(@product)
-  @categories = catalog.categories
-  erb :product_detail
+get '/decoracion-para-comuniones' do
+  @static_page = spreadsheet.get_static_page('decoracion-para-comuniones')
+  @static_pages = spreadsheet.get_static_pages_by_tag('comuniones')
+  erb :static_pages_by_tag
 end
 
 get '/contacto' do

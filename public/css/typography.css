@@ -8,25 +8,24 @@ NOTE: This is typography stylesheet of template, This file contains typography o
 
 */
 
- 
+
 /*================================================
 [  Table of contents  ]
 ================================================
- 
+
 :: General
-:: Page section margin padding 
+:: Page section margin padding
 :: Text color
 :: Row eq height And No Gutter
 :: Extra class
 :: Loading
 :: Back to top
 :: Basic margin padding
- 
+
 ======================================
 [ End table content ]
 ======================================*/
 
- 
 /*************************
     General
 *************************/
@@ -60,14 +59,14 @@ h6 { font-size: 16px; font-style: normal; font-weight: 600; line-height: 18px; }
 
 ul { margin: 0px; padding: 0px; }
 p { font-weight: normal; line-height: 1.5; color: #626262; }
-hr { margin: 0; padding: 0px; border-bottom:1px dashed #eceff8; border-top: 0px; } 
+hr { margin: 0; padding: 0px; border-bottom:1px dashed #eceff8; border-top: 0px; }
 
 *::-moz-selection { background: #84ba3f; color: #fff; text-shadow: none; }
 ::-moz-selection { background: #84ba3f; color: #fff; text-shadow: none; }
 ::selection { background: #84ba3f; color: #fff; text-shadow: none; }
 
 /***************************
-Page section margin padding 
+Page section margin padding
 ****************************/
 .page-section-ptb { padding: 80px 0; }
 .page-section-pt { padding: 80px 0 0; }
@@ -76,7 +75,7 @@ Page section margin padding
 .page-section-1-ptb { padding: 120px 0; }
 .page-section-1-pt { padding: 120px 0 0; }
 .page-section-1-pb { padding: 0 0 120px; }
-   
+
 /*************************
     Text color
 *************************/
@@ -87,9 +86,9 @@ Page section margin padding
 
 
 img.bottom-img { position: absolute; bottom: 0; left: 0; right: 0;  }
- 
-/******************************************** 
-  Row-eq-height And No Gutter  
+
+/********************************************
+  Row-eq-height And No Gutter
 /*********************************************/
 .no-gutter{  margin-right:0; margin-left:0;}
 .no-gutter > [class*='col-'] { padding-right:0; padding-left:0;}
@@ -102,7 +101,7 @@ img.bottom-img { position: absolute; bottom: 0; left: 0; right: 0;  }
 [data-valign-overlay="top"]{vertical-align:top;}
 [data-valign-overlay="middle"]{vertical-align:middle;}
 [data-valign-overlay="bottom"]{vertical-align:bottom;}
- 
+
 
  /*************************
     Extra class
@@ -117,23 +116,23 @@ section { background: #ffffff; }
 *******************************************/
 #pre-loader { background-color: #ffffff; height: 100%; width: 100%; position: fixed; z-index: 1; margin-top: 0px; top: 0px; left: 0px; bottom: 0px; overflow: hidden !important; right: 0px; z-index: 999999; }
 #pre-loader img { text-align: center; left: 0; position: absolute; right: 0; top: 50%; transform: translateY(-50%); -webkit-transform: translateY(-50%); -o-transform: translateY(-50%); -ms-transform: translateY(-50%); -moz-transform: translateY(-50%); z-index: 99; margin: 0 auto; }
-  
+
 /*************************
     back to top
 *************************/
 #back-to-top .top { z-index: 999; position: fixed; margin: 0px; color: #fff; transition:all .5s ease-in-out; position:fixed; bottom:105px; right:15px; border-radius: 3px; z-index: 999; background: transparent; font-size: 14px; background: #84ba3f; width: 40px; height: 40px; text-align: center; }
 #back-to-top i { padding-top: 2px; font-size: 20px; }
 #back-to-top span { display: block; line-height: 8px; font-size: 11px; }
-  
+
  /*************************
   Basic margin padding
-*************************/ 
+*************************/
 .m-0 { margin-top: 0 !important; margin-right: 0 !important; margin-bottom: 0 !important; margin-left: 0 !important; }
 .p-0 { padding-top: 0 !important; padding-right: 0 !important; padding-bottom: 0 !important; padding-left: 0 !important; }
- 
+
 /*************************
      Margin top
-*************************/ 
+*************************/
 .mt-0 { margin-top: 0 !important; }
 .mt-10 { margin-top: 10px !important; }
 .mt-15 { margin-top: 15px !important; }
@@ -154,7 +153,7 @@ section { background: #ffffff; }
 
  /*************************
     Margin right
-*************************/ 
+*************************/
 .mr-0 { margin-right: 0!important }
 .mr-10 { margin-right: 10px !important; }
 .mr-15 { margin-right: 15px !important; }
@@ -171,7 +170,7 @@ section { background: #ffffff; }
 .mr-120 { margin-right: 120px !important; }
 .mr-130 { margin-right: 130px !important; }
 .mr-140 { margin-right: 140px !important; }
-.mr-150 { margin-right: 150px !important; } 
+.mr-150 { margin-right: 150px !important; }
 
  /*************************
     Margin bottom
@@ -213,8 +212,8 @@ section { background: #ffffff; }
 .ml-120 { margin-left: 120px !important; }
 .ml-130 { margin-left: 130px !important; }
 .ml-140 { margin-left: 140px !important; }
-.ml-150 { margin-left: 150px !important; } 
- 
+.ml-150 { margin-left: 150px !important; }
+
  /*************************
     Padding top
 *************************/
@@ -234,7 +233,7 @@ section { background: #ffffff; }
 .pt-120 { padding-top: 120px !important; }
 .pt-130 { padding-top: 130px !important; }
 .pt-140 { padding-top: 140px !important; }
-.pt-150 { padding-top: 150px !important; } 
+.pt-150 { padding-top: 150px !important; }
 
  /*************************
     Padding right
@@ -254,8 +253,8 @@ section { background: #ffffff; }
 .pr-110 { padding-right: 110px !important; }
 .pr-120 { padding-right: 120px !important; }
 .pr-130 { padding-right: 130px !important; }
-.pr-140 { padding-right: 140px !important; } 
- 
+.pr-140 { padding-right: 140px !important; }
+
  /*************************
     Padding bottom
 *************************/
@@ -275,8 +274,8 @@ section { background: #ffffff; }
 .pb-120 { padding-bottom: 120px !important; }
 .pb-130 { padding-bottom: 130px !important; }
 .pb-140 { padding-bottom: 140px !important; }
-.pb-150 { padding-bottom: 150px !important; } 
- 
+.pb-150 { padding-bottom: 150px !important; }
+
  /*************************
     Padding left
 *************************/
@@ -296,4 +295,4 @@ section { background: #ffffff; }
 .pl-120 { padding-left: 120px !important; }
 .pl-130 { padding-left: 130px !important; }
 .pl-140 { padding-left: 140px !important; }
-.pl-150 { padding-left: 150px !important; }  
+.pl-150 { padding-left: 150px !important; }
