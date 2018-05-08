@@ -83,7 +83,11 @@ NOTE: This is main stylesheet of template, This file contains the styling for th
   color: white;
   letter-spacing: 4pt;
   font-family: 'Adam', serif;
-  /*font-size: 60px*/
+}
+
+.logo-dark {
+  letter-spacing: 8pt;
+  font-family: 'Adam', serif;
 }
 
 /*************************
