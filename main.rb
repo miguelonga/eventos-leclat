@@ -7,8 +7,8 @@ helpers do
   include Render
 end
 
-# spreadsheet = Spreadsheet.write_json('15gjjgS_5Y15rS66JGBZzqUcatMwiRBijHm0GnSWuRW4')
-spreadsheet = Spreadsheet
+spreadsheet = Spreadsheet.write_json('15gjjgS_5Y15rS66JGBZzqUcatMwiRBijHm0GnSWuRW4')
+# spreadsheet = Spreadsheet
 
 get '/' do
   erb :index
