@@ -16,6 +16,10 @@ end
 
 get '/:slug/page' do
   @static_page = spreadsheet.get_static_page(params[:slug])
+  # @static_page.cover_image = resize_image_quallity(@static_page.cover_image, 25)
+  # @static_page.gallery.map! do |image|
+  #   resize_image_quallity(image, 25)
+  # end
   erb :static_page
 end
 

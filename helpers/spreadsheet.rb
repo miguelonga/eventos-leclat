@@ -92,6 +92,7 @@ end
 class StaticPage
   STATIC_PAGE_PROPERTIES = ["name", "excerpt", "short_description", "description", "cover_image", "seo_keywords", "seo_title", "slug", "tags", "gallery"]
   attr_reader :name, :excerpt, :short_description, :description, :cover_image, :seo_keywords, :seo_title, :slug, :tags, :gallery
+  attr_writer :cover_image
 
   def initialize(data)
     page_data = {}
@@ -110,5 +111,14 @@ class StaticPage
     @slug = page_data['slug'] || ''
     @tags = page_data['tags'] || ''
     @gallery = (page_data['gallery'] || '').split(', ')
+
+    @cover_image = resize_image_quallity(@cover_image, 25)
+    @gallery.map! {|image| resize_image_quallity(image, 25)}
+  end
+
+  private
+
+  def resize_image_quallity(image, quallity)
+    image.split('upload/').first + 'upload/q_' + quallity.to_s + '/' + image.split('upload/').last
   end
 end
