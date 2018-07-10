@@ -6,7 +6,7 @@ require 'fileutils'
 
 class Spreadsheet
   OOB_URI = 'urn:ietf:wg:oauth:2.0:oob'
-  APPLICATION_NAME = 'SpreadSheet Consultor Finametrix'
+  APPLICATION_NAME = 'SpreadSheet Consultor'
   SCOPE = Google::Apis::SheetsV4::AUTH_SPREADSHEETS_READONLY
   PRODUCT_PROPERTIES = ["name", "description", "category", "seo_keywords", "seo_title", "slug"]
   STATIC_PAGES_PAGE = 'Estaticas'
@@ -50,7 +50,7 @@ class Spreadsheet
     def initialize_service
       service = Google::Apis::SheetsV4::SheetsService.new
       service.client_options.application_name = APPLICATION_NAME
-      api_key = 'AIzaSyDfXyiFOLcDAdea3aZrswME6WBoGNCAmnY'
+      api_key = 'AIzaSyDBz51eTHiAQ9VbNo_liPbnwHYvNmATj9c'
       service.key = api_key
       service
     end
