@@ -7,27 +7,33 @@ helpers do
   include Render
 end
 
-spreadsheet = Spreadsheet.write_json('15gjjgS_5Y15rS66JGBZzqUcatMwiRBijHm0GnSWuRW4')
-# spreadsheet = Spreadsheet
+event_spreadsheet = Spreadsheet.new('events', '15gjjgS_5Y15rS66JGBZzqUcatMwiRBijHm0GnSWuRW4')
+fashion_spreadsheet = Spreadsheet.new('fashion', '10MMYfFKKjfxHk3jOBlmSdr6pnGXuH9LvQTLZQVcP7oA')
+
 
 get '/' do
   erb :index
 end
 
 get '/:slug/page' do
-  @static_page = spreadsheet.get_static_page(params[:slug])
+  @static_page = event_spreadsheet.get_static_page(params[:slug])
+  erb :static_page
+end
+
+get '/:slug/fashion_page' do
+  @static_page = fashion_spreadsheet.get_static_page(params[:slug])
   erb :static_page
 end
 
 get '/decoracion-para-bodas' do
-  @static_page = spreadsheet.get_static_page('decoracion-para-bodas')
-  @static_pages = spreadsheet.get_static_pages_by_tag('bodas')
+  @static_page = event_spreadsheet.get_static_page('decoracion-para-bodas')
+  @static_pages = event_spreadsheet.get_static_pages_by_tag('bodas')
   erb :static_pages_by_tag
 end
 
 get '/decoracion-para-comuniones' do
-  @static_page = spreadsheet.get_static_page('decoracion-para-comuniones')
-  @static_pages = spreadsheet.get_static_pages_by_tag('comuniones')
+  @static_page = event_spreadsheet.get_static_page('decoracion-para-comuniones')
+  @static_pages = event_spreadsheet.get_static_pages_by_tag('comuniones')
   erb :static_pages_by_tag
 end
 
@@ -40,6 +46,15 @@ post '/send_mail' do
   redirect '/'
 end
 
+get '/choose' do
+  erb :choose_index
+end
 
+get '/moda' do
+  erb :fashion_index
+end
 
-
+get '/refresh/:password' do
+  event_spreadsheet.refresh if event_spreadsheet.auth(params[:password])
+  fashion_spreadsheet.refresh if fashion_spreadsheet.auth(params[:password])
+end
