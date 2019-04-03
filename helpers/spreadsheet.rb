@@ -133,6 +133,7 @@ class StaticPage
   private
 
   def resize_image_quallity(image, quallity)
+    return nil if image === ''
     image.split('upload/').first + 'upload/q_' + quallity.to_s + '/' + image.split('upload/').last
   end
 end

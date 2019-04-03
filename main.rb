@@ -54,7 +54,7 @@ get '/moda' do
   erb :fashion_index
 end
 
-get '/refresh/:password' do
-  event_spreadsheet.refresh if event_spreadsheet.auth(params[:password])
-  fashion_spreadsheet.refresh if fashion_spreadsheet.auth(params[:password])
+get '/refreshable' do
+  event_spreadsheet.refresh
+  fashion_spreadsheet.refresh
 end
