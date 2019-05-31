@@ -1,12 +1,12 @@
 <%= erb :header %>
 
-<section class="page-title bg-overlay-black-60 parallax" data-jarallax='{"speed": 0.6}' style="background-image: url(<%= @static_page.cover_image %>);">
+<section class="page-title bg-overlay-black-60 parallax" data-jarallax='{"speed": 0.6}' style="background-image: url(<%= @static_page['cover_image'] %>);">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
         <div class="page-title-name">
-          <h1><%= @static_page.name %></h1>
-          <p><%= @static_page.excerpt %></p>
+          <h1><%= @static_page['name'] %></h1>
+          <p><%= @static_page['excerpt'] %></p>
         </div>
       </div>
     </div>
@@ -17,15 +17,15 @@
   <div class="container">
   <div class="row mt-60">
     <div class="col-lg-12 col-md-12">
-      <h2 class="mb-30"><%= @static_page.seo_title %></h2>
+      <h2 class="mb-30"><%= @static_page['seo_title'] %></h2>
       <div class="isotope columns-3 popup-gallery no-title">
         <% @static_pages.each do |page| %>
           <h1></h1>
           <div class="grid-item">
             <div class="portfolio-item">
-              <img src= "<%= page.cover_image %>" alt="">
+              <img src= "<%= page['cover_image'] %>" alt="">
               <div class="portfolio-overlay">
-                  <h4 class="text-white"> <a href="<%= page.slug %>/page"><%= page.name %></a></h4>
+                  <h4 class="text-white"> <a href="<%= page['slug'] %>/page"><%= page['name'] %></a></h4>
                 <!-- <span class="text-white"><a href="#">Texto de tres palabras</a></span> -->
               </div>
               <a class="popup portfolio-img" href="images/portfolio/small/01.jpg"><i class="fa fa-arrows-alt"></i></a>

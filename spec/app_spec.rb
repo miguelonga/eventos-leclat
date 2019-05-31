@@ -2,7 +2,7 @@ require './helpers/spreadsheet'
 
 describe 'Spreadsheet Service' do
   before(:all) do
-    @spreadsheet = Spreadsheet.write_json('1FS9qHn-vl9go5OkJG67yfhungizypCLx5DPLg6cq8sw')
+    @spreadsheet = Spreadsheet.new('test','1FS9qHn-vl9go5OkJG67yfhungizypCLx5DPLg6cq8sw')
   end
 
   it 'create a page by an array' do

@@ -1,12 +1,12 @@
 <%= erb :header %>
 
-<section class="page-title bg-overlay-black-60 parallax" data-jarallax='{"speed": 0.6}' style="background-image: url(<%= @static_page.cover_image %>);">
+<section class="page-title bg-overlay-black-60 parallax" data-jarallax='{"speed": 0.6}' style="background-image: url(<%= @static_page['cover_image'] %>);">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
        <div class="page-title-name">
-           <h1><%= @static_page.name %></h1>
-          <!-- <p><%= @static_page.excerpt %></p> -->
+           <h1><%= @static_page['name'] %></h1>
+          <!-- <p><%= @static_page['excerpt'] %></p> -->
         </div>
         <!-- <ul class="page-breadcrumb">
           <li><a href="#"><i class="fa fa-home"></i> Home</a> <i class="fa fa-angle-double-right"></i></li>
@@ -24,9 +24,9 @@
         <div class="col-lg-1"></div>
         <div class="col-lg-10 col-md-12">
            <div class="section-title text-center">
-            <h6 class="subtitle"><%= @static_page.excerpt %></h6>
+            <h6 class="subtitle"><%= @static_page['excerpt'] %></h6>
             <!-- <h2 class="title">Es lo que nos hace únicos</h2> -->
-            <p><%= @static_page.short_description %></p>
+            <p><%= @static_page['short_description'] %></p>
           </div>
         </div>
         <div class="col-lg-12 col-md-12 mt-30 mb-30">
@@ -43,7 +43,7 @@
     <div class="row">
       <div class="col-lg-12 col-md-12">
         <div class="isotope columns-2 popup-gallery">
-          <% @static_page.gallery.each do |image| %>
+          <% @static_page['gallery'].each do |image| %>
             <div class="grid-item">
               <div class="portfolio-item">
                 <img src="<%= image %>" alt="">
