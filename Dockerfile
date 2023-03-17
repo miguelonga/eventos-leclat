@@ -6,4 +6,4 @@ RUN bundle install
 
 EXPOSE 4567
 
-CMD ["/bin/bash"]
+CMD ["ruby", "main.rb", "-0", "0.0.0.0", "-p", "4567"]
