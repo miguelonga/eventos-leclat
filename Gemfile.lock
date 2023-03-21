@@ -97,6 +97,8 @@ GEM
     netrc (0.11.0)
     nokogiri (1.14.2-x64-mingw-ucrt)
       racc (~> 1.4)
+    nokogiri (1.14.2-x86_64-linux)
+      racc (~> 1.4)
     oauth2 (2.0.9)
       faraday (>= 0.17.3, < 3.0)
       jwt (>= 1.0, < 3.0)
@@ -176,6 +178,7 @@ GEM
     uber (0.1.0)
     unf (0.1.4)
       unf_ext
+    unf_ext (0.0.8.2)
     unf_ext (0.0.8.2-x64-mingw-ucrt)
     version_gem (1.1.2)
     webrick (1.8.1)
@@ -184,6 +187,7 @@ GEM
 
 PLATFORMS
   x64-mingw-ucrt
+  x86_64-linux
 
 DEPENDENCIES
   capybara
